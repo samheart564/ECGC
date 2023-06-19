@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   margin-top: 0px;
@@ -32,6 +36,7 @@ a:link {
   color: blue;
   background-color: transparent;
   text-decoration: none;
+  
 }
 
 a:visited {
@@ -48,7 +53,7 @@ a:hover {
 
 a:active {
   color: green;
-  background-color: transparent;
+  background-color: green;
   text-decoration: underline;
 }
 
@@ -89,4 +94,3 @@ a:active {
   background-color: #04AA6D;
   color: white;
 }
-
