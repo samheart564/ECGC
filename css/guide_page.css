@@ -20,6 +20,10 @@ h2 {
   color: hsla(0,0%,100%,.9);
 }
 
+h3 {
+  color: hsla(0,0%,100%,.9);
+}
+
 p {
   color: hsla(0,0%,100%,.6);
   font-size: medium;
@@ -38,7 +42,7 @@ li {
 }
 
 a:link {
-  color: blue;
+  color: pink;
   background-color: transparent;
   text-decoration: none;
   
@@ -107,10 +111,12 @@ a:active {
 
 .rarity-4 {
   background-color: #ee9;
+  border-color: #ee9;
 }
 
 .rarity-3 {
   background-color: #c4adff;
+  border-color: #c4adff;
 }
 
 .rarity-2 {
@@ -127,7 +133,7 @@ div {
 
 .icon {
   overflow: hidden;
-  margin: 0 auto;
+  margin: 6px auto;
   width: 50px;
   padding: 2px;
   box-shadow: 0 10px 25px 0 #000;
@@ -139,4 +145,30 @@ img {
   border-radius: 0.2857rem;
   vertical-align: middle;
   border-style: none;
+}
+
+th {
+  color: hsla(0,0%,100%,.9);
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  word-wrap: break-word;
+}
+
+td {
+  color: hsla(0,0%,100%,.6);
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  word-wrap: break-word;
+}
+
+table {
+  border: 1px solid grey;
+  padding: 10px;
+  min-height: 90px;
+  border-collapse: collapse;
+  width: 60%;
 }
