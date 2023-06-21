@@ -8,7 +8,7 @@ body {
   margin-bottom: 40px;
   margin-right: 100px;
   margin-left: 100px;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -26,12 +26,12 @@ h3 {
 
 p {
   color: hsla(0,0%,100%,.6);
-  font-size: large;
+  font-size: medium;
 }
 
 ul {
 
-  font-size: larger;
+  font-size: large;
 
 }
 
@@ -82,7 +82,7 @@ a:active {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* Change the color of links on hover */
@@ -131,44 +131,3 @@ div {
   display: block;
 }
 
-.icon {
-  overflow: hidden;
-  margin: 6px auto;
-  width: 50px;
-  padding: 2px;
-  box-shadow: 0 10px 25px 0 #000;
-  height: auto;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 0.2857rem;
-  vertical-align: middle;
-  border-style: none;
-}
-
-th {
-  color: hsla(0,0%,100%,.9);
-  border: 1px solid grey;
-  padding: 10px;
-  text-align: center;
-  border-collapse: collapse;
-  word-wrap: break-word;
-}
-
-td {
-  color: hsla(0,0%,100%,.6);
-  border: 1px solid grey;
-  padding: 10px;
-  text-align: center;
-  border-collapse: collapse;
-  word-wrap: break-word;
-}
-
-table {
-  border: 1px solid grey;
-  padding: 10px;
-  min-height: 90px;
-  border-collapse: collapse;
-  width: 60%;
-}
