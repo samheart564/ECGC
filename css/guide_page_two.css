@@ -159,7 +159,12 @@ a:active {
   color:black;
 }
 
-.checkmark {
+.rng {
+  background-color: lemonchiffon;
+  color:black;
+}
+
+.mark {
   font-size: xx-large;
 }
 
@@ -188,29 +193,32 @@ th {
   color: hsla(0,0%,100%,.9);
   background-color: hsla(0,0%,100%,.1);
   border: 1px solid grey;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-collapse: collapse;
   word-wrap: break-word;
   font-size: large;
+  overflow: hidden;
 }
 
 td {
   color: hsla(0,0%,100%,.6);
   border: 1px solid grey;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-collapse: collapse;
   word-wrap: break-word;
   font-size: medium;
+  overflow: hidden;
 }
 
 table {
   border: 1px solid grey;
-  padding: 10px;
+  padding: 5px;
   min-height: 90px;
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
 }
 
 
