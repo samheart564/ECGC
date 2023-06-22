@@ -168,6 +168,9 @@ a:active {
   font-size: xx-large;
 }
 
+.enlargement {
+  font-size: larger;
+}
 
 div {
   display: block;
@@ -207,7 +210,7 @@ td {
   padding: 5px;
   text-align: center;
   border-collapse: collapse;
-  font-size: medium;
+  font-size: 14.5px;
   word-wrap: break-word;
   overflow: hidden;
 }
