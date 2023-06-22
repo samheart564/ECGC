@@ -5,7 +5,6 @@ html {
 body {
   background-color: #1b1b1b;
   margin-top: 0px;
-  margin-bottom: 40px;
   margin-right: 100px;
   margin-left: 100px;
   font-family: Arial, Helvetica, sans-serif;
@@ -98,12 +97,21 @@ a:active {
   color: white;
 }
 
+#topnav a:hover.split {
+  background-color: #ddd;
+  color: black;
+}
+
 #topnav a.split_two {
   /* float: left; */
   background-color: #04AA6D;
   color: white;
 }
 
+#topnav a:hover.split_two {
+  background-color: #ddd;
+  color: black;
+}
 
 .rarity-5 {
   background: linear-gradient(120deg,#fbffca,#baffbf,#a7efff,#ffabff);
@@ -131,3 +139,16 @@ div {
   display: block;
 }
 
+/* stationary footer */
+
+#bottomnav {
+  background-color: #171941; /* Black background color */
+  /* position: fixed; Make it stick/fixed */
+  overflow: hidden;
+}
+
+#bottomnav div {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
