@@ -196,8 +196,8 @@ th {
   padding: 5px;
   text-align: center;
   border-collapse: collapse;
-  word-wrap: break-word;
   font-size: medium;
+  word-wrap: break-word;
   overflow: hidden;
 }
 
@@ -207,8 +207,8 @@ td {
   padding: 5px;
   text-align: center;
   border-collapse: collapse;
-  word-wrap: break-word;
   font-size: medium;
+  word-wrap: break-word;
   overflow: hidden;
 }
 
