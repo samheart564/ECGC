@@ -154,6 +154,11 @@ a:active {
   color: black;
 }
 
+.one_time {
+  background-color: lemonchiffon;
+  color:black;
+}
+
 .checkmark {
   font-size: xx-large;
 }
