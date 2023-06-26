@@ -136,10 +136,41 @@ a:active {
   background-color: #9fe8ff;
 }
 
+.rarity-1 {
+  background-color: #cdcdcd;
+}
+
 .border-radius-0 {
   border-radius: 0;
 }
 
+.found {
+  background-color: palegreen;
+  color: black;
+}
+
+.not_found {
+  background-color: lightcoral;
+  color: black;
+}
+
+.one_time {
+  background-color: lemonchiffon;
+  color:black;
+}
+
+.rng {
+  background-color: lemonchiffon;
+  color:black;
+}
+
+.mark {
+  font-size: xx-large;
+}
+
+.enlargement {
+  font-size: larger;
+}
 
 div {
   display: block;
@@ -165,29 +196,32 @@ th {
   color: hsla(0,0%,100%,.9);
   background-color: hsla(0,0%,100%,.1);
   border: 1px solid grey;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-collapse: collapse;
+  font-size: medium;
   word-wrap: break-word;
-  font-size: large;
+  overflow: hidden;
 }
 
 td {
   color: hsla(0,0%,100%,.6);
   border: 1px solid grey;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-collapse: collapse;
+  font-size: 14.5px;
   word-wrap: break-word;
-  font-size: medium;
+  overflow: hidden;
 }
 
 table {
   border: 1px solid grey;
-  padding: 10px;
+  padding: 5px;
   min-height: 90px;
   border-collapse: collapse;
-  width: 60%;
+  width: 1300px;
+  table-layout: fixed;
 }
 
 
