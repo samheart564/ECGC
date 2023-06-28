@@ -48,7 +48,6 @@ a:link {
   color: pink;
   background-color: transparent;
   text-decoration: none;
-  
 }
 
 a:visited {
@@ -117,7 +116,6 @@ a:active {
   color: black;
 }
 
-
 .rarity-5 {
   background: linear-gradient(120deg,#fbffca,#baffbf,#a7efff,#ffabff);
 }
@@ -142,30 +140,6 @@ a:active {
 
 .border-radius-0 {
   border-radius: 0;
-}
-
-.found {
-  background-color: palegreen;
-  color: black;
-}
-
-.not_found {
-  background-color: lightcoral;
-  color: black;
-}
-
-.one_time {
-  background-color: lemonchiffon;
-  color:black;
-}
-
-.rng {
-  background-color: lemonchiffon;
-  color:black;
-}
-
-.mark {
-  font-size: xx-large;
 }
 
 .enlargement {
@@ -215,6 +189,23 @@ td {
   overflow: hidden;
 }
 
+td.mark {
+  font-size: xx-large;
+  color: black;
+}
+
+td.found {
+  background-color: palegreen;
+}
+
+td.not_found {
+  background-color: lightcoral;
+}
+
+td.rng {
+  background-color: lemonchiffon;
+}
+
 table {
   border: 1px solid grey;
   padding: 5px;
@@ -222,7 +213,7 @@ table {
   border-collapse: collapse;
   /* min-width: 1384px; */
   min-width: 1200px;
-  max-width: 100%;
+  width: 100%;
   table-layout: fixed;
 }
 
