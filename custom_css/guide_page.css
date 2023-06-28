@@ -191,6 +191,7 @@ td {
 
 td.mark {
   font-size: xx-large;
+  font-weight: 500;
   color: black;
 }
 
@@ -206,19 +207,60 @@ td.rng {
   background-color: lemonchiffon;
 }
 
+/* td.mark:hover {
+  font-weight: 850;
+} */
+
+td.found:hover {
+  background-color: #52b352;
+  color: black;
+}
+
+td.not_found:hover {
+  color: black;
+  background-color: #c75e5e;
+}
+
+td.rng:hover {
+  color: black;
+  background-color: rgb(199, 193, 136);
+}
+
+td span.location {
+  display: none;
+}
+
+td span.normal {
+  display: inline;
+}
+
+td:hover span.location {
+  display:inline;
+}
+
+td:hover span.normal {
+  display:none;
+}
+
+span p {
+  color:black;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.2em;
+}
+
 table {
   border: 1px solid grey;
   padding: 5px;
   min-height: 90px;
   border-collapse: collapse;
-  /* min-width: 1384px; */
-  min-width: 1200px;
+  min-width: 1384px;
   width: 100%;
   table-layout: fixed;
 }
 
 hr {
-  min-width: 1200px;
+  min-width: 1384px;
 }
 
 /* stationary footer */
