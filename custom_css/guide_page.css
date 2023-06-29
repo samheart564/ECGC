@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #1b1b1b;
+  background-color: #1f1e1e;
   margin-top: 0px;
   margin-right: 100px;
   margin-left: 100px;
@@ -81,13 +81,13 @@ a.in_hover:visited {
 }
 
 a.in_hover:hover {
-  color: red;
+  color: #0047ab;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a.in_hover:active {
-  color: magenta;
+  color: #0047ab;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -204,7 +204,7 @@ th {
 td {
   color: hsla(0,0%,100%,.6);
   border: 1px solid grey;
-  padding: 5px;
+  padding: 3px;
   text-align: center;
   border-collapse: collapse;
   font-size: 14.5px;
