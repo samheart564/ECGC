@@ -65,7 +65,7 @@ a:hover {
 
 a:active {
   color: green;
-  background-color: green;
+  background-color: transparent;
   text-decoration: underline;
 }
 
