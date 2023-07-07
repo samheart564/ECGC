@@ -300,4 +300,31 @@ hr {
   margin-right: 15px;
 }
 
+.toc ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0.6em;
+  padding: 0;
+}
+
+.toc ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+  line-height: 130%;
+}
+
+.toc li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+.toc li {
+  margin: 0px;
+}
+
+.toc li ol > li:before {
+  content: counters(item, ".") " ";
+}
 
