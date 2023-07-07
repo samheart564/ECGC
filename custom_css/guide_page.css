@@ -300,6 +300,13 @@ hr {
   margin-right: 15px;
 }
 
+/* table of contents */
+
+.toc {
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
 .toc ol {
   list-style-type: none;
   counter-reset: item;
@@ -310,7 +317,7 @@ hr {
 .toc ol > li {
   display: table;
   counter-increment: item;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
   line-height: 130%;
 }
 
