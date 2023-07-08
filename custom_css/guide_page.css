@@ -155,10 +155,12 @@ a.in_hover:active {
 
 .rarity-2 {
   background-color: #9fe8ff;
+  border-color: #9fe8ff;
 }
 
 .rarity-1 {
   background-color: #cdcdcd;
+  border-color: #cdcdcd;
 }
 
 .border-radius-0 {
