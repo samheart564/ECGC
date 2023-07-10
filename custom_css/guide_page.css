@@ -116,6 +116,12 @@ a.in_hover:active {
   color: black;
 }
 
+#topnav a.selected {
+  background-color: #ddd;
+  color: black;
+  text-decoration: underline;
+}
+
 /* Create a right-aligned (split) link inside the navigation bar */
 #topnav a.split {
   float: right;
@@ -282,6 +288,16 @@ table {
   min-width: 1384px;
   width: 100%;
   table-layout: fixed;
+}
+
+table.not_max {
+  min-width: 800px;
+  width: 60%;
+}
+
+th.table_header {
+  background-color: hsla(0, 0%, 100%, 0.034);
+  padding: 0;
 }
 
 hr {
