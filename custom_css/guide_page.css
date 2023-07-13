@@ -331,6 +331,11 @@ table.not_max {
   width: 60%;
 }
 
+table.not_max_two {
+  min-width: 600px;
+  width: 40%;
+}
+
 th.table_header {
   background-color: hsla(0, 0%, 100%, 0.034);
   padding: 0;
