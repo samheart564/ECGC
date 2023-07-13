@@ -342,6 +342,17 @@ th.table_header {
   min-height: 60px;
 }
 
+.img_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img_column {
+  float: left;
+  margin: 2px;
+}
+
 
 /* stationary footer */
 
