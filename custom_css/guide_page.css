@@ -353,6 +353,57 @@ th.table_header {
   margin: 2px;
 }
 
+:root {
+  --img_width : 400px;
+}
+
+div.img_gallery {
+  display: flex;
+}
+
+div.in_gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  min-width: var(--img_width);
+  width: fit-content;
+}
+
+div.outside_gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  min-width: var(--img_width);
+  width: 450px;
+}
+
+div.in_gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.outside_gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.in_gallery:hover {
+  border: 1px solid #777;
+}
+
+div.outside_gallery:hover {
+  border: 1px solid #777;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.desc p {
+  font-size: 0.90em;
+}
+
 
 /* stationary footer */
 
