@@ -32,7 +32,9 @@ h3 {
 }
 
 h4 {
-  color: hsla(0,0%,100%,.9);
+  /* color: hsla(0,0%,100%,.9); */
+  color: hsla(0,0%,100%,.6);
+  text-decoration: underline;
 }
 
 p {
@@ -402,6 +404,30 @@ div.desc {
 
 div.desc p {
   font-size: 0.90em;
+}
+
+div.shipRowContainer {
+  margin: 20px 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shipRowContainer>div {
+  border: 1px solid grey;
+  padding: 10px;
+  width: 100px;
+  min-height: 90px;
+}
+
+.shipRowCell {
+  flex: 0 0 auto;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.shipRowCell:hover {
+  border: 1px solid #ccc;
 }
 
 
