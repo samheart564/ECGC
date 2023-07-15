@@ -411,6 +411,7 @@ div.shipRowContainer {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  min-width: 900px;
 }
 
 .shipRowContainer>div {
