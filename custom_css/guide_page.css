@@ -31,6 +31,10 @@ h3 {
   color: hsla(0,0%,100%,.9);
 }
 
+h3.enlargement {
+  font-size: larger;
+}
+
 h4 {
   /* color: hsla(0,0%,100%,.9); */
   color: hsla(0,0%,100%,.6);
@@ -226,6 +230,7 @@ div {
   padding: 2px;
   box-shadow: 0 10px 25px 0 #000;
   height: auto;
+  position: relative;
 }
 
 img {
@@ -233,6 +238,23 @@ img {
   border-radius: 0.2857rem;
   vertical-align: middle;
   border-style: none;
+}
+
+.icon-note {
+  position: absolute;
+  bottom: 2px;
+  background-color: rgba(0, 0, 0, 0.486);
+  width: 60px;
+  text-align: center;
+  margin-right: 1px;
+}
+
+.icon-note > p {
+  font-size: xx-small;
+  font-weight: bold;
+  color: white;
+  margin: 0px;
+  padding: 1px;
 }
 
 th {
