@@ -230,7 +230,6 @@ div {
   padding: 2px;
   box-shadow: 0 10px 25px 0 #000;
   height: auto;
-  position: relative;
 }
 
 img {
@@ -241,12 +240,11 @@ img {
 }
 
 .icon-note {
-  position: absolute;
-  bottom: 2px;
   background-color: rgba(0, 0, 0, 0.486);
   width: 60px;
   text-align: center;
-  margin-right: 1px;
+  margin: 6px auto;
+  position: relative;
 }
 
 .icon-note > p {
