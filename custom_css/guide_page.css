@@ -223,6 +223,10 @@ div {
   display: block;
 }
 
+.icon-note-helper {
+  position: relative;
+}
+
 .icon {
   overflow: hidden;
   margin: 6px auto;
@@ -243,8 +247,9 @@ img {
   background-color: rgba(0, 0, 0, 0.486);
   width: 60px;
   text-align: center;
-  margin: 6px auto;
-  position: relative;
+  position: absolute;
+  top: 0.1rem;
+  left: 1.25rem;
 }
 
 .icon-note > p {
