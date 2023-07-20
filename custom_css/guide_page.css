@@ -376,7 +376,7 @@ table {
 
 table.not_max {
   min-width: 850px;
-  width: 60%;
+  width: 80%;
 }
 
 table.not_max_two {
@@ -420,7 +420,7 @@ div.img_gallery {
 
 div.in_gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #777;
   float: left;
   min-width: var(--img_width);
   width: fit-content;
@@ -428,7 +428,7 @@ div.in_gallery {
 
 div.outside_gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #777;
   float: right;
   min-width: var(--img_width);
   width: 450px;
@@ -445,16 +445,17 @@ div.outside_gallery img {
 }
 
 div.in_gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #ccc;
 }
 
 div.outside_gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #ccc;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+  border-top: 1px solid #777
 }
 
 div.desc p {
