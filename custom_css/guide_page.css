@@ -434,12 +434,26 @@ div.outside_gallery {
   width: 450px;
 }
 
+div.outside_gallery_two {
+  margin: 5px;
+  border: 1px solid #777;
+  float: right;
+  min-width: var(--img_width);
+  width: 650px;
+}
+
+
 div.in_gallery img {
   width: 100%;
   height: auto;
 }
 
 div.outside_gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.outside_gallery_two img {
   width: 100%;
   height: auto;
 }
@@ -452,10 +466,14 @@ div.outside_gallery:hover {
   border: 1px solid #ccc;
 }
 
+div.outside_gallery_two:hover {
+  border: 1px solid #ccc;
+}
+
 div.desc {
   padding: 15px;
   text-align: center;
-  border-top: 1px solid #777
+  border-top: 1px solid #777;
 }
 
 div.desc p {
