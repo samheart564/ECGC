@@ -445,7 +445,7 @@ div.outside_gallery {
 div.outside_gallery_two {
   margin: 5px;
   border: 1px solid #777;
-  float: right;
+  float: none;
   min-width: var(--img_width);
   width: 650px;
 }
