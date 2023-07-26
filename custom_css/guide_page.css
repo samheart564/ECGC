@@ -62,6 +62,10 @@ b {
   color: hsla(0,0%,100%,.9);
 }
 
+p.black_text > b {
+  color: black
+}
+
 a:link {
   color: pink;
   background-color: transparent;
@@ -213,6 +217,10 @@ a.ship_name:active {
 
 .border-radius-0 {
   border-radius: 0;
+}
+
+.normal_border {
+  border-color: grey;
 }
 
 .enlargement {
