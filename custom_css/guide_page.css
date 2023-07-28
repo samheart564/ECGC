@@ -426,6 +426,10 @@ div.img_gallery {
   display: flex;
 }
 
+div.img_gallery.not_max_img {
+  width: 70%;
+}
+
 div.in_gallery {
   margin: 5px;
   border: 1px solid #777;
