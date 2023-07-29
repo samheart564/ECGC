@@ -361,9 +361,9 @@ td:hover span.normal {
   display:none;
 }
 
-td > div {
+/* td > div {
   min-height: 90px;
-}
+} */
 
 span p {
   color:black;
