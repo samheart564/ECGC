@@ -20,15 +20,15 @@
         
     </head>
     
-    <body class="index-page">
+    <body class="index-page overflow-x-hidden">
         
         <!-- Navbar -->
-        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-transparent" style="background-color: #222a42;">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #222a42;">
             <div class="container-fluid mt-0 m-auto col-12 col-sm-9">
                 <div class="row w-100" style="justify-content: space-between;">
                     <div class="col-auto">
                         <!-- Title -->
-                        <a class="navbar-brand" href="index.html" target="_self" rel="noopener noreferrer">
+                        <a class="navbar-brand nav-logo-custom" href="index.html" target="_self" rel="noopener noreferrer">
                             <img src="images\misc\SiteIcon.png" width="40 px" alt="ECGC"></a>
                         </a>
                     </div>
@@ -44,8 +44,8 @@
                             <ul class="navbar-nav me-auto mb-2 mb-md-0 fs-6 nav-pills">
                                 
                                 <li class="nav-item dropdown btn-group">
-                                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa fa-pencil"></i> Guides
+                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-pencil"></i> <span>Guides</span>
                                     </a>
                                 
                                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" style="background-color: #222a42; border: none">
@@ -85,14 +85,20 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="contributors.html" class="nav-link" rel="noopener noreferrer" target="_self" title="Contributors">
-                                        <i class="fa fa-user-pen"></i> <span class="d-md-none">Contributors</span>
+                                    <a href="contributors.html" class="nav-link nav-logo-custom active" rel="noopener noreferrer" target="_self" title="Contributors">
+                                        <i class="fa fa-user-pen nav-logo-custom"></i> <span class="d-md-none">Contributors</span>
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="https://discord.gg/wKJKxq5WQt" class="nav-link" rel="noopener noreferrer" target="_blank" title="Join our Discord Server!">
-                                        <i class="fa-brands fa-discord nav-logo-custom"></i> <span class="d-md-none">Discord</span>
+                                    <a href="changelog.html" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Changelog">
+                                        <i class="fa fa-clipboard nav-logo-custom"></i> <span class="d-md-none">Changelog</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="https://discord.gg/wKJKxq5WQt" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_blank" title="Join our Discord Server!">
+                                        <i class="fa-brands fa-discord"></i> <span class="d-md-none">Discord</span>
                                     </a>
                                 </li>
                             </ul>
@@ -103,7 +109,7 @@
         </nav>
 
         <!-- Content -->
-        <div class="wrapper index-style">
+        <div class="wrapper index-page index-style">
             
             <!-- Animation Stuff -->
             <div class="squares square1"></div>
@@ -114,10 +120,12 @@
             <div class="squares square6"></div>
             <div class="squares square7"></div>
 
+            
             <div class="main">
                 <div class="container">
+
                     <div class="images">
-                        <h3 class="mb-5 contributor-title-custom">List of Contributors</h3>
+                        <h3 class="mb-5 contributor-title-custom fs-2">Contributors</h3>
 
                         <div class="justify-content-center row">
                             
@@ -156,7 +164,22 @@
                     </div>
                 </div>
             </div>
-
+        </div>
             
     </body>
+
+    <!-- bottom bar -->
+    <footer class="footer">
+        <div class="container-fluid pb-1 pt-1 overflow-auto">
+            <div class="row">
+                <div class="col" style="text-align: left;">
+                    <h6 class="title footer-style-two">Media taken from <a href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki" target="_blank" rel="noopener noreferrer">Azur Lane English Wiki</a>.</h6>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <h6 class="title footer-style">© <script type="text/javascript">document.write( new Date().getFullYear() );</script>, coded by samheart564</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </html>
