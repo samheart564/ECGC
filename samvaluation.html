@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Samvaluations - ECGC</title>
+        <link rel="icon" type="image/x-icon" href="images\misc\SiteIcon.ico">
+
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800' rel='stylesheet'>
+        <link rel="stylesheet" href="custom_css\guide_page.css">
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="custom_js\guide_page.js"></script>
+        <script src="https://kit.fontawesome.com/a085617b05.js" crossorigin="anonymous"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+        
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #222a42;">
+            <div class="container-fluid mt-0 m-auto col-12 col-sm-9">
+                <div class="row w-100" style="justify-content: space-between;">
+                    <div class="col-auto">
+                        <!-- Title -->
+                        <a class="navbar-brand nav-logo-custom" href="index" target="_self" rel="noopener noreferrer">
+                            <img src="images\misc\SiteIcon.png" width="40 px" alt="ECGC"></a>
+                        </a>
+                    </div>
+
+                    <div class="col-auto">
+                        <!-- Expand Button -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- Items inside Navbar -->
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0 fs-6 nav-pills">
+                                
+                                <li class="nav-item dropdown btn-group">
+                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom active" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-pencil"></i> <span>Guides</span>
+                                    </a>
+                                
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" style="background-color: #222a42;">
+                                        <li>
+                                            <a class="dropdown-item" href="augment_module" target="_self" rel="noopener noreferrer">Augment Module</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="common_resource" target="_self" rel="noopener noreferrer">Common Resource</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="early_ship_recommendations" target="_self" rel="noopener noreferrer">Early Ship Recommendations</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="https://imgur.com/a/YoxqS7A" target="_self" rel="noopener noreferrer">Equipment and Shops</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="farming" target="_self" rel="noopener noreferrer">Farming</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="fleetbuilding" target="_self" rel="noopener noreferrer">Fleetbuilding</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="research" target="_self" rel="noopener noreferrer">Research</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item active" href="https://azurlane.koumakan.jp/wiki/User:Samheart564/Samvaluation" target="_self" rel="noopener noreferrer">Samvaluations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="contributors" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Contributors">
+                                        <i class="fa fa-user-pen nav-logo-custom"></i> <span class="d-md-none">Contributors</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="changelog" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Changelog">
+                                        <i class="fa fa-clipboard nav-logo-custom"></i> <span class="d-md-none">Changelog</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="https://discord.gg/wKJKxq5WQt" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_blank" title="Join our Discord Server!">
+                                        <i class="fa-brands fa-discord"></i> <span class="d-md-none">Discord</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Table of Contents (SideNav) -->
+        <button id="sidenavButton" class="btn custom-sidenav-button z-3" onclick="toggleFunction()">
+            <i id="sidenavToggle" class="fa fa-angle-double-up"></i>
+            <span class="d-none d-sm-inline">Table of Contents</span>
+        </button>
+        
+        <div id="sidenav" class="sidenav overflow-auto">
+            <div class="container m-auto">
+                <span class="d-sm-none"><h2 class="text-center">Table of Contents</h2><hr class="custom-hr"></span>
+                <div class="toc">
+                    <ol>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#Ships" onclick="toggleFunction()" class="toc_h_one">Ships</a>
+                            <ol>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Rondo at Rainbow's End" onclick="toggleFunction()" class="toc_h_two">Rondo at Rainbow's End</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Pledge of the Radiant Court" onclick="toggleFunction()" class="toc_h_two">Pledge of the Radiant Court</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Angel of the Iris" onclick="toggleFunction()" class="toc_h_two">Angel of the Iris</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#PR5" onclick="toggleFunction()" class="toc_h_two">PR5</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Pledge of the Radiant Court" onclick="toggleFunction()" class="toc_h_two">Pledge of the Radiant Court</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Pledge of the Radiant Court" onclick="toggleFunction()" class="toc_h_two">Pledge of the Radiant Court</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Pledge of the Radiant Court" onclick="toggleFunction()" class="toc_h_two">Pledge of the Radiant Court</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#Pledge of the Radiant Court" onclick="toggleFunction()" class="toc_h_two">Pledge of the Radiant Court</a>
+                                </li>
+                            </ol>
+                        </li>
+                    <ol>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Content -->
+        <div class="container mt-5 mt-sm-0 m-auto guide-content-body col-12 col-sm-9" id="main">
+            
+            <!-- Margin Buffer -->
+            <div class="row mb-3"></div>
+
+            <!-- Title -->
+            <h1 id="home">
+                <p class="fs-2 h1">
+                    <b>
+                        <u>Samvaluations (WIP)</u>
+                    </b>
+                </p>
+            </h1>
+
+            <!-- Version Number -->
+            <p style="text-align: center;">
+                <b>Current Version</b>: 0.0.1 | <b>Last Updated</b>: September 3rd, 2023
+            </p>
+            <br>
+        
+            <h2 id="introduction">Introduction</h2><hr class="custom-hr">
+                <p>This list compiles all my ship evaluations (Samvaluations), ever since I started doing them. </p>
+            <br>
+
+            <h6 class="fs-6">MOST DESCRIPTIONS HAVEN'T BEEN UPDATED SINCE THAT SHIP'S EVENT. IF THERE ARE ANY MISTAKES/CONCERNS/ETC. CONTACT ME ON DISCORD SO I CAN ADRESS THEM ASAP.</h6>
+            <br>
+
+
+            <h2 id="Ships">Ship Evaluations</h2><hr class="custom-hr">
+            <br>
+
+                <h3 id="Rondo at Rainbow's End">
+                    <a href="https://azurlane.koumakan.jp/wiki/Rondo at Rainbow's End" target="_blank" rel="noopener noreferrer">Rondo at Rainbow's End</a>
+                </h3>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                            <col width="15%">
+                            <col>
+                            <tr>
+                                <th>Ship</th>
+                                <th>Samvaluation</th>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Emden" title="Emden">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\EmdenIcon.png" alt="Emden">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Emden
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Emden is a damage-oriented CL with great stats and skills. She has top CL damage due to her strong barrages and guns, plus an interesting torpedo gimmick. CL gun mode has more damage, but DD gun mode has slightly less damage for solid utility. Either mode works extremely well. Bulk is average, but DD gun mode's heal helps. Overall, she is VERY good. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Lützow" title="Lützow">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\LützowIcon.png" alt="Lützow">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Lützow
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Lützow is a flagship-oriented BC, with solid stats and an alright barrage. Has a meh debuff, and is otherwise very "traditional." Overall, seems solid; nothing exceptional, but not awful. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Seydlitz" title="Seydlitz">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\SeydlitzIcon.png" alt="Seydlitz">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Seydlitz
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Seydlitz is an off-flag oriented BC with great stats and skills. She can off-flag if needed. You want her to have a high % of health as possible, although the damage redistribution goes against that. Main gun salvo reduction is great in mobbing, and she can give other SMS BB/BC the same reduction. Damage output is also fairly solid, making her great in bosses. Overall seems great; nothing exceptional, but she has great damage and the first salvo cooldown reduction. Typical event SSR. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Elbing" title="Elbing">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\ElbingIcon.png" alt="Elbing">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Elbing
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>What did you expect from a purple torpedo focused CL with meh stats, skills, and efficiencies? She's bad, just like a typical event purple. Waifu only. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Thüringen" title="Thüringen">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\ThüringenIcon.png" alt="Thüringen">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Thüringen
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Stats are meh, and barrage pattern is not that great. Debuff is alright, but still worse than other BB support like Duke of York. She's bad, but it could be worse. Waifu only. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Yorck" title="Yorck">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\YorckIcon.png" alt="Yorck">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Yorck
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Has meh bulk for a tank, but damage is lacking. Worse than Portland Kai as a tank, therefore not really worth using outside waifu. She's bad, but it could be worse. Waifu only. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Little Prinz Eugen" title="Little Prinz Eugen">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\Little Prinz EugenIcon.png" alt="Little Prinz Eugen">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Little Prinz Eugen
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Little Eugen is basically a normal Eugen sidegrade. Since normal Eugen is only tank and nothing else, Little Eugen falls into the same category. Waifu Protecc only.</p>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                <br>
+
+                <h3 id="Pledge of the Radiant Court">
+                    <a href="https://azurlane.koumakan.jp/wiki/Pledge of the Radiant Court" target="_blank" rel="noopener noreferrer">Pledge of the Radiant Court</a>
+                </h3>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                            <col width="15%">
+                            <col>
+                            <tr>
+                                <th>Ship</th>
+                                <th>Samvaluation</th>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Vanguard" title="Vanguard">
+                                            <div class="icon rarity-5 border-radius-0">
+                                                <img src="images\ship_icons\VanguardIcon.png" alt="Vanguard">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Vanguard
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Vanguard is an off-flag oriented BB with amazing stats and skills. Her AA is very high, allowing her to help the vanguard in plane-heavy areas situationally. Her debuffs are amazing, allowing the entire fleet to take advantage of them. Her personal damage is no joke either. Secondary crit rate buff looks nice on paper but is useless outside W14. Has crossfleet barrage and buff to HMS. You want to use an HMS equipment on her, which is most likely going to be <a href="https://azurlane.koumakan.jp/wiki/Twin_40mm_Bofors_STAAG" target="_blank" rel="noopener noreferrer">Twin 40mm Bofors STAAG</a> and/or <a href="https://azurlane.koumakan.jp/wiki/Triple_152mm_(BL_6%22_Mk_XXV_Prototype)" target="_blank" rel="noopener noreferrer">Triple 152 Mk XXV (Neptune Gun)</a>.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Indomitable" title="Indomitable">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\IndomitableIcon.png" alt="Indomitable">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Indomitable
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Indomitable is a damage-oriented CV with great stats and skills. Don't pair her with Prince of Wales or Repulse (<a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Repulse META" title="Repulse META">Repulse META</a> is fine, but not necessary!), and ideally she is sortied without her fellow Illustrious-class sisters as well. Her 6 fighter 2 torpedo bomber loadout is very nice against light and medium armor targets when equipped with the BF-109G, and has a nice balance of damage and AA with a traditional fighter. Barrages add more free damage as well. Overall she's solid; not top tier but not bad.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Jervis" title="Jervis">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\JervisIcon.png" alt="Jervis">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Jervis
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Jervis is a mob-tank oriented DD with great stats and skills. Her AoA barrage is good, making her damage output solid. Her heal is nice, however it's not enough to support an entire fleet on its own. The HMS support is practically useless, and the "only in DD/CL fleet" buff is W14 specific. She is pretty tanky in the tank slot; however, with her low HP her bulk against bosses is in doubt. Overall, she is a great ship.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Revenge" title="Revenge">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\RevengeIcon.png" alt="Revenge">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Revenge
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Revenge is an off-flag oriented BB. Her stats are bad compared to gold BBs, and the skills don't make up for them. Barrage seems meh, the armor break is alright but not worth sacrificing a BB slot for, and the second skill in its entirety is purely a gimmick. Collection tier only.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Bellona" title="Bellona">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\BellonaIcon.png" alt="Bellona">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Bellona
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Bellona is a support-oriented CL with good stats and great skills. Bulk is alright, AA is pretty high but not carry level, but her damage output is mediocre. The only redeeming factor about her is the Air Raid Assistance CV buff, combined with her higher than average AA. HMS buff is not worth for the most part due to how situational and bad it is. Overall, she is alright as a carrier buffer, but useless outside of that.</p>
+                                </td>
+                            </tr>
+
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Unicorn" title="Unicorn">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\UnicornKaiIcon.png" alt="Unicorn">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Unicorn (Retrofit)
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Unicorn Retrofit is a healer-oriented CVL with great stats and amazing skills. She solidifies herself as a top healer in the game. She gains a preload which helps a lot with mobbing, and also gains backline healing capabilities as well. Overall, she is the best healer in the game, surpassing <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Perseus" title="Perseus">Perseus</a>.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Little Cheshire" title="Little Cheshire">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\Little CheshireIcon.png" alt="Little Cheshire">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Little Cheshire
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Little Cheshire is an AA-oriented CA with good stats and skills. Bulk and surface damage output are alright, and the AA output remains close to normal Cheshire. Has a self-heal skill as well. Overall she's one of the better loli ships, but outside AA heavy areas she is bad. Use situationally in plane-heavy areas.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Memphis META" title="Memphis META">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\Memphis METAIcon.png" alt="Memphis META">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Memphis META
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Memphis META is a damage-oriented CL with meh stats and skills. The stats are alright, but with 1 MGM and meh skill damage her overall damage is bad. The slow is gimmicky, as well as the damage boost to certain factions. The +EVA to some meta ships is a joke since we only had 1 META vanguard before Memphis META (Helena META). Collection tier only.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Repulse META" title="Repulse META">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\Repulse METAIcon.png" alt="Repulse META">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Repulse META
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Repulse META is an off-flag oriented BB with good stats and great skills. Stats are alright, but her barrages are very good and more than make up for them. She is still good as an off-flag, but for maximum performance you want her in the Flagship slot. Overall, she is a great BC, very worthy of being an SR.</p>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                <br>
+
+                <h3 id="Angel of the Iris">
+                    <a href="https://azurlane.koumakan.jp/wiki/Angel_of_the_Iris" target="_blank" rel="noopener noreferrer">Angel of the Iris</a>
+                </h3>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                            <col width="15%">
+                            <col>
+                            <tr>
+                                <th>Ship</th>
+                                <th>Samvaluation</th>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Joffre" title="Joffre">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\JoffreIcon.png" alt="Joffre">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Joffre
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Joffre is a solid CV with great stats and efficiencies. Barrages are great; she wants to be in the bottom position for the torpedo bomber barrage. Solid CV, worthy of being an event SR.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/L'Indomptable" title="L'Indomptable">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\L'IndomptableIcon.png" alt="L'Indomptable">
+                                            </div>
+                                            <!-- Ship name -->
+                                            L'Indomptable
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>L'Indomptable is a solid DD with great FP and Main Gun Efficiency. Her Torpedo Stat and Torpedo Efficiency sucks, but her skills bring them back up to respectable levels. Skill 2 is practically useless in PvE (since if ships are almost dying something has gone wrong), and is mainly for stall memeing. Barrages are solid, and work great with AoA shot reduction. Solid DD, worthy of being an event SR.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Enterprise (Royal Navy)" title="Enterprise (Royal Navy)">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\Enterprise (Royal Navy)Icon.png" alt="Enterprise (Royal Navy)">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Enterprise (Royal Navy)
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>What did you expect from a purple torpedo focused CL with meh Stats, Skills, and Efficiencies? Her saving grace is that her AoA barrage is alright. She's bad, just like a typical event purple. Waifu only.</p>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                <br>
+
+                <h3 id="PR5">
+                    <a href="https://azurlane.koumakan.jp/wiki/Research#Series_5" target="_blank" rel="noopener noreferrer">PR5</a>
+                </h3>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                            <col width="15%">
+                            <col>
+                            <tr>
+                                <th>Ship</th>
+                                <th>Samvaluation</th>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Plymouth" title="Plymouth">
+                                            <div class="icon rarity-5 border-radius-0">
+                                                <img src="images\ship_icons\PlymouthIcon.png" alt="Plymouth">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Plymouth
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Plymouth is a damage-oriented CL with high stats, great bulk, great skills, and an amazing loadout. She has MGM+2 CL guns with two strong barrages, making her a top overall damage vanguard in the entire game. Her skills give your flagship a huge damage boost as well. As one of the highest damage vanguard ships in the game, she is very worth getting.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Brest" title="Brest">
+                                            <div class="icon rarity-5 border-radius-0">
+                                                <img src="images\ship_icons\BrestIcon.png" alt="Brest">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Brest
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Brest is an extremely tanky CB with great stats and skills. Her damage output is around the other CBs, but is still high in the grand scheme of tanks. She has a heal that can support the fleet, but it shouldn't be the only heal used. Typical CB performance means she is very worth getting, but not high priority if you have the other 3 already.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Chkalov" title="Chkalov">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\ChkalovIcon.png" alt="Chkalov">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Chkalov
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Chikalov is a damage-oriented CV with high stats, solid skills, and a solid loadout. Her airstrike barrage is very strong (especially when enhanced), and her debuff barrage, despite the bullets being weak, has a good enough pattern to proc it reliably. Her slow is nice, but the short duration makes it hard to sync with other ships in the same fleet. Lack of a Fighter hurts her in AA areas unless you have an intercept-capable Torpedo Bomber. Overall, she is an amazing CV. </p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Prinz Rupprecht" title="Prinz Rupprecht">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\Prinz RupprechtIcon.png" alt="Prinz Rupprecht">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Prinz Rupprecht
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Prinz Rupprecht is a Flagship BC with solid stats and skills. Her barrage is solid, and has a high proc chance. She has a long range ghost gun for more free damage, as well as a great torpedo barrage off of it. She ideally prefers to be flagship due to her barrage pattern. Her heal is irrelevant when paired with a good healer like Unicorn. Overall, she is a great BB/BC option.</p>
+                                </td>
+                            </tr>
+                            
+                            <!-- Ship Cell -->
+                            <tr>
+                                <!-- image cell -->
+                                <td>
+                                    <p>
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Harbin" title="Harbin">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\HarbinIcon.png" alt="Harbin">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Harbin
+                                        </a>
+                                    </p>
+                                </td>
+                            
+                                <td>
+                                    <p>Harbin is a damage-oriented CL with great stats and amazing skills. She has great balanced damage from her MGM+1 DD guns, double Torpedo Launches, and double solid barrages. Her bulk is a bit on the frailer side, but her smokescreens help mitogate it and offer decent fleet support as well. Overall, she is an amazing CL.</p>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                <br>
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    </body>
+
+    <!-- bottom bar -->
+    <footer class="footer">
+        <div class="container-fluid pb-1 pt-1 overflow-auto">
+            <div class="row">
+                <div class="col" style="text-align: left;">
+                    <h6 class="title footer-style-two">Media taken from <a href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki" target="_blank" rel="noopener noreferrer">Azur Lane English Wiki</a>.</h6>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <h6 class="title footer-style">© <script type="text/javascript">document.write( new Date().getFullYear() );</script>, coded by samheart564</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>
