@@ -14,6 +14,286 @@ This list compiles all my ship evaluations (Samvaluations), ever since I started
  ! style="width:15%"|Ship
  ! class="unsortable"|Samvaluation
  |-
+ <!-- Northern Overture -->
+ |{{IconHover|Sovetskaya Rossiya|5}}<br>[[Sovetskaya Rossiya]]
+ |Rossiya is a flagship-oriented BB with meh stats and skills. Her self-buff is only for the first 2 battles, which is not relevant when mobbing. Her barrage has high raw damage but a really bad pattern and average proc rate. Overall, she is a meh ship.
+ |-
+ |{{IconHover|Chapayev|5}}<br>[[Chapayev]]
+ |Chapayev is a damage-oriented CL with great stats and skills. Her personal damage is pretty good with MGM+1, her barrages, and her self-buffs. Her bulk is also good. Overall, she is a great ship, but a bit redundant due to all the good CLs that came out in the past year.
+ |-
+ |{{IconHover|Tashkent|5}}<br>[[Tashkent]]
+ |Tashkent is a damage-oriented DD with great stats and skills. Her personal damage is pretty good against Light Armor enemies and mobbing despite having 1 MGM, due to her summon and her barrage. Her torpedo damage is pretty bad, limiting her potential against Medium and Heavy armor enemies. In addition, she wants to use a Northern Parliament Main Gun due to her skill 2. Overall, she is a great ship, but a bit redundant due to the existance of Starter DDs.
+ |-
+ |{{IconHover|Avrora|5}}<br>[[Avrora]]
+ |Avrora is a support-oriented CL with meh stats and great skills. Her stats and personal damage are mediocre, but her buff makes up for it by buffing your Vanguard Fleet's damage. Overall, she is a great ship provided her buff is fully utilized.
+ |-
+ |{{IconHover|Gangut|4}}<br>[[Hibiki]]
+ |Gangut is an off-flag oriented BB with meh stats and skills. When equipped with her signiture Main Gun, she gains cooldown reduction which is nice when mobbing but still worse than other easily accessible options. Against bosses, she is also outclassed by other easily accessible options. Collection only.
+ |-
+ |{{IconHover|Grozny|4}}<br>[[Shirayuki]]
+ |Grozny is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Minsk|4}}<br>[[Shirayuki]]
+ |Minsk is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+
+ <!-- Microlayer Medley -->
+ |{{IconHover|Intrepid|5}}<br>[[a]]
+ |Intrepid is a damage-oriented CV with good stats and skills. She has a good loadout (8 planes) and an on-strike barrage; however, the barrage is nothing special compared to other recently released CVs in 2023. She also doesn't have as many self-buffs compared to the top of her hull. Overall, she is a good ship.
+ |-
+ |{{IconHover|Reno|5}}<br>[[a]]
+ |Reno is an AA-oriented CL with meh stats and skills. Her AA output is really high, but not good enough to AA carry. Her personal damage and bulk are both average at best. Collection only.
+ |-
+ |{{IconHover|Bremerton|5}}<br>[[a]]
+ |Bremerton is a mob-tank oriented CA with great stats and skills. Her bulk is good enough to mob-tank most content due to her self-buffs. Her personal damage is also good due to her Skill 1 as well. Overall, she is a great ship.
+ |-
+ |{{IconHover|Ingraham|5}}<br>[[a]]
+ |Ingraham is a support-oriented DD with good stats and skills. Her personal damage is good, but not amazing. Her support is also good at keeping your Vanguard Fleet healthy. Her AA is good, but not enough to AA carry an entire fleet. There is no need to focus +TRP auxiliary equipment to increase her AA self-buff. Overall, she is a good ship.
+ |-
+ |{{IconHover|Cooper|4}}<br>[[a]]
+ |Cooper attempts to be an ASW-oriented DD with bad stats and skills. Collection only. 
+ |-
+ |{{IconHover|Nautilus|4}}<br>[[a]]
+ |Nautilus is a damage-oriented SS with great stats and skills. Her gimmick of resurfacing for a bit before diving back against is not useful, and can make her die earlier than expected. However, her personal damage is still pretty good, making her worth using as a 3rd SS in a USS composition, assuming you have nobody better. Overall, she is a good ship.
+ |-
+ |{{IconHover|Bluegill|4}}<br>[[a]]
+ |Bluegill is a SS with meh stats and skills. Collection only. 
+ |-
+ |{{IconHover|Casablanca|3}}<br>[[a]]
+ |Casablanca is a support-oriented CVL with meh stats and great skills. Her personal damage is really bad; however she does have fast airstrikes to help mitigate it. Her fleet support for other CV / CVLs is really good, however. Overall, she is a good ship; outclassed by <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Independence" title="Independence">Independence (Retrofit)</a>.
+ |-
+ |{{IconHover|Marblehead|3}}<br>[[a]]
+ |Marblehead is a damage-oriented CL with bad stats and skills. Collection only.
+ |-
+<!-- Skybound Oratorio -->
+ |{{IconHover|Jeanne d'Arc|5}}<br>[[a]]
+ |Jeanne d'Arc is a support-oriented CL with great stats and skills. Her personal damage is very mediocre at best, but she makes up for it with her Vanguard Fleet supportive capabilities. Against most bosses, her prescence can increase the survaviblity of your Vanguard Fleet by a sizable amount. Overall, she is a great ship.
+ |-
+ |{{IconHover|Richelieu|5}}<br>[[a]]
+ |Richelieu is a flagship-oriented BB with great stats and skills. She buffs all French ships in your fleet, however she is fine without buffing anyone but herself. Her barrage is alright, and her preload helps frontload her damage output. Only MGM+1 hurts her in longer fights. Overall, she is a great ship.
+ |-
+ |{{IconHover|Algérie|5}}<br>[[a]]
+ |Algérie is a damage-oriented CA with great stats and meh skills. Her damage output is mediocre due to only 1 MGM and meh barrage damage. Her bulk is fine, but not enough to tank any hard content reliably. Overall, she is a good ship.
+ |-
+ |{{IconHover|Le Terrible|5}}<br>[[a]]
+ |Le Terrible is a damage-oriented DD with great stats and skills. Her damage is good due to her multiple skill barrages and self-buffs. She is ideally sortied as the only DD in your vanguard for the RLD and DMG reduction buffs. Overall, she is a great ship.
+ |-
+ |{{IconHover|Béarn|4}}<br>[[a]]
+ |Béarn is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.
+ |-
+ |{{IconHover|La Galissonniére|4}}<br>[[a]]
+ |La Galissonniére is a damage-oriented CL with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Maillé Brézé|4}}<br>[[a]]
+ |Maillé Brézé is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Vauquelin|4}}<br>[[a]]
+ |Vauquelin is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+<!-- Aurora Noctis Rerun -->
+ |{{IconHover|Howe|5}}<br>[[a]]
+ |Howe is an off-flag oriented BB with great stats and skills. She has a 100% chance timed barrage that does decent damage, while also providing minor RLD support to herself and other BB/BC/BBVs. She is ideally sortied to make full use of her Skill 2 self-buffs; however, that is not fully necessary for her to be good. Overall, she is a great ship.
+ |-
+ |{{IconHover|Perseus|5}}<br>[[a]]
+ |Perseus is a healer oriented CVL with meh stats and great skills. Her damage is heavily frontloaded due to 2 preloaded airstrikes at the start of the battle. Her personal damage is really bad due to low efficiencies, AVI stat, and 6 planes. In addition, she contributes nothing else to the battle outside of her frontloaded damage and healing due to her airstrikes taking almost twice as long as other CVLs. However, her healing is really good, and heals both the Vanguard and Main Fleets. Her Skill 2 barrage does not have enough damage to subvert her deficiencies. Overall, she is an amazing healer, but redundant due to the existance of Unicorn (Retrofit).
+ |-
+ |{{IconHover|Hermione|5}}<br>[[a]]
+ |Hermione is a damage-oriented CL with meh stats and skills. Her personal damage is mediocre due to 1 MGM and decent barrages. self-buffs. She ideally is not sortied as the Main Tank due to her Skill 2 self-buffs. Overall, she is a mediocre ship.Collection only.
+ |-
+ |{{IconHover|Eagle|4}}<br>[[a]]
+ |Eagle is a damage-oriented CVL with meh stats and skills. Can equip a secondary gun, which helps with interception. Collection only.
+ |-
+ |{{IconHover|Valiant|4}}<br>[[a]]
+ |Valiant is a damage-oriented BB with meh stats and skills. Her personal damage is mediocre due to a 50% barrage chance, and average Main Gun efficiencies and stats. She offers some fleet support due to a spoecial Armor Break, but that is not worth using her over a better ship that contributes more to the battle. Collection only.
+ |-
+ |{{IconHover|Icarus|4}}<br>[[a]]
+ |Icarus is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+
+
+<!-- Dreamwaker's Butterfly Rerun -->
+ |{{IconHover|Shinano|6}}<br>[[Shinano]]
+ |Shinano is an damage-oriented CV with 9 planes, great loadout, high stats/efficiencies, and great skills. She ideally is sortied with 2 other IJN ships for her self-buffs. Her debuffs to enemies are nice as fleet support. Overall, she is an amazing ship, and can fit in any fleet very well.
+ |-
+ |{{IconHover|Kii|5}}<br>[[Kii]]
+ |Kii is a flagship-oriented BB with great stats and skills. Her timed barrage means that her damage output is staggered. She is ideally sortied with 2 other IJN ships for her buffs. Uniquely, she also buffs the Torpedo stat from the Main fleet, however that has situational usage. Overall she is a great ship.
+ |-
+ |{{IconHover|Suzutsuki|5}}<br>[[Suzutsuki]]
+ |Suzutsuki is a damage-oriented DD with great stats, skills, and barrages, and solid efficiencies. She has MGM+1, alongside solid Torpedo stat/efficiency, giving her great mixed damage. Her self-heal adds to her bulk as well. Smokescreen is a bit situational, but is always nice when it works. Overall she is a great ship.
+ |-
+ |{{IconHover|Kashino|4}}<br>[[Kashino]]
+ |Has solid bulk, but lack of damage output hurts her a lot. Her potential support capabiliities from Cargo gear are also lackluster. Collection only.
+ |-
+ |{{IconHover|Chiyoda|4}}<br>[[Chiyoda]]
+ |She has subpar stats and unreliable skills, along with only 6 planes. Collection only. Gives +1 CV RLD Fleet Technology.
+ |-
+ |{{IconHover|Chitose|4}}<br>[[Chitose]]
+ |She has subpar stats and unreliable skills, along with only 6 planes. Collection only. Gives +1 CV AVI Fleet Technology.
+ |-
+
+<!-- Empyreal Tragicomedy -->
+ |{{IconHover|Formidable|5}}<br>[[a]]
+ |Formidable is a support / damage-oriented CV with great stats and skills. As a support, she offers a timestop that other ships can take advantage of to improve their geometric accuracy against bosses. As a damage-dealer, when equipped with the <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Fairey_Albacore" title="Fairey Albacore">Fairey Albacore</a> Torpedo Bomber, she has great screen-wide barrages on airstrike, which along with her loadout help clear out enemy waves well. Overall, she is a great ship.
+ |-
+ |{{IconHover|Littorio|5}}<br>[[a]]
+ |Littorio is a flagship-oriented BB with great stats and skills. She doesn't have many self-buffs compared to other BBs, and 130% Main Gun efficiency hinders her shelling damage. Her barrage is still pretty good, however. Overall, she is a great ship.
+ |-
+ |{{IconHover|Pola|5}}<br>[[a]]
+ |Pola is a mob-tank oriented CA with great stats and skills. Her personal damage is good due to MGM+1 CA guns, plus her skill barrages. Her bulk is also good for mobbing due to her self-buffs. Overall, she is a great ship.
+ |- 
+ |{{IconHover|Zara|5}}<br>[[a]]
+ |Zara is a mob-tank oriented CA with great stats and good skills. Her personal damage is mediocre since outside of her MGM+1 she has no good skill barrages. Her bulk is decent due to her shields. Her skill 2 doesn't affect her Main Gun choices against enemies. Overall, she is a good ship.
+ |-
+ |{{IconHover|Giulio Cesare|4}}<br>[[a]]
+ |Giulio Cesare is an off-flag oriented BB with bad stats and skills. Collection only. Gives +1 BB ACC Fleet Technology.
+ |-
+ |{{IconHover|Carabiniere|4}}<br>[[a]]
+ |Carabiniere is a damage-oriented DD with meh stats and skills. Her personal damage is mediocre, and her support, while nice, is not worth using her over options that do more damage. Collection only.
+ |-
+ |{{IconHover|Vincenzo Gioberti|4}}<br>[[a]]
+ |Icarus is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Conte di Cavour|3}}<br>[[a]]
+ |Conte di Cavour is an off-flag oriented BB with bad stats and skills. Her unique Augment Module is an improvement over her base form, but it is not enough to save her. Collection only. Gives +1 BB RLD Fleet Technology.
+ |-
+ |{{IconHover|Trento|3}}<br>[[a]]
+ |Trento is a damage-oriented CA with bad stats and skills. Collection only.
+ |-
+ 
+
+ <!-- Crescendo of Polaris -->
+ |{{IconHover|Akagi µ|5}}<br>[[a]]
+ |Akagi µ is a damage-oriented CV with great stats and skills. Her first-strike cooldown reduction allows her to be offset from traditional BBs and CVs. She is ideally sortied with other µ ships for her self-buffs. Overall, she is a great ship. 
+ |-
+ |{{IconHover|Gascogne µ|5}}<br>[[a]]
+ |Gascogne µ is an off-flag oriented BB with great stats and meh skills. Due to her ammo changing abilities, you want to equip a BB gun with high raw damage. Her barrages are meh, and her ammo change doesn't allow her to specialize for bosses. Only MGM+1 hurts her damage output compared to other BBs. Her first shot cooldown reduction is nice for desyncing, but not relevant for bosses. Overall she is a good ship.
+ |-
+ |{{IconHover|Admiral Hipper µ|4}}<br>[[a]]
+ |Admiral Hipper µ is a tank-oriented CA with good stats but bad skills. Her bulk is good, but her bad personal damage doesn't justify using her over other options. Collection only. 
+ |-
+ |{{IconHover|Cleveland µ|4}}<br>[[a]]
+ |Cleveland µ is a damage-oriented CL with meh stats and bad skills. The ammo change to µ Purple actively hinders her damage output, since the armor modifiers are worse than typical CL HE guns. In addition, she lacks any self buffs to damaging stats. Collection only.
+ |-
+ |{{IconHover|Sheffield µ|4}}<br>[[a]]
+ |Sheffield µ is a damage-oriented CL with bad stats and skills. Collection only.
+ |-
+
+ <!-- Universe in Unison -->
+ |{{IconHover|Dido µ|5}}<br>[[a]]
+ |Dido µ is an AA-oriented CL with good stats and skills. Her AA is really high, but not enough to act as an AA carry. Her personal damage is good due to her skill barrages. Overall, she is a good ship. 
+ |-
+ |{{IconHover|Illustrious µ|5}}<br>[[a]]
+ |Illustrious µ is a damage-oriented CV with good stats and skills. Her damage is heavily skewed towards Light and Medium armor due to possessing 6 Fighters and a Rocket skill barrage. Her support is nice, but unreliable due to the random chance involved. Overall, she is a good ship.
+ |-
+ |{{IconHover|Le Malin µ|5}}<br>[[a]]
+ |Le Malin µ is a damage-oriented DD with good stats and skills. Her personal damage is good due to multiple, reliable skill barrages. Her bulk is also pretty good due to multiple self-buffs and small heals throughout her kit. Overall, she is a good ship.
+ |-
+ |{{IconHover|Roon µ|5}}<br>[[a]]
+ |Roon µ is a tank-oriented CA with great stats and skills. Her personal damage is really good due to MGM+1 CA guns and good skill barrages. Her support is a bit unreliable due to its awkward timing and pattern, but it is nice to have. Overall, she is a great ship.
+ |-
+ |{{IconHover|Taihou µ|5}}<br>[[a]]
+ |Taihou µ is a damage-oriented CV with good stats and skills. Her personal damage is good due to multiple skill barrages; however her reliance on other µ ships for self-buffs hinders her damage potential. Overall, she is a good ship.
+ |-
+ |{{IconHover|Tashkent µ|5}}<br>[[a]]
+ |Tashkent µ is a damage-oriented DD with good stats and skills. Her personal damage is pretty good due to multiple skill barrages, and her summon makes up for only having 1 MGM. Her self-buffs are pretty bad outside of the summon, however. Overall, she is a good ship
+ |-
+ |{{IconHover|Albacore µ|4}}<br>[[a]]
+ |Albacore µ is a damage-oriented SS with meh stats and skills. Collection only.
+ |-
+ |{{IconHover|Baltimore µ|4}}<br>[[a]]
+ |Baltimore µ is a damage-oriented CA with meh stats and skills. Her personal damage is mediocre due to a lack of good self-buffs, and she doesn't have any relevant fleet-wide support. Collection only.
+ |-
+<!-- Inverted Orthant -->
+ |{{IconHover|Peter Strasser|5}}<br>[[a]]
+ |Peter Strasser is a damage-oriented CV with good stats and skills. Her personal damage is solid due to good stats and an on-strike barrage, but it is nothing exceptional. Her chance to set enemy speed to 0 is too random to take advantage of, but it is nice to have. She is ideally sortied with other KMS CVs to take advantage of the cooldown reduction she provides. Overall, she is a good ship.
+ |-
+ |{{IconHover|Prinz Heinrich|5}}<br>[[a]]
+ |Prinz Heinrich is a tank-oriented CA with great stats and skills. Her personal damage is great due to her skill barrages and high FP stat and efficiencies. She can equip the Triple 283mm CB gun to help deal with shielded enemies. Her bulk is also good enough to Main Tank most content in the game. Overall, she is a great ship.
+ |-
+ |{{IconHover|U-37|5}}<br>[[a]]
+ |U-37 is a damage-oriented SS with amazing stats and skills. Her personal damage is among the top of SS, and her reload requirements allow her to equip a Mark 20 "Bidder" without needing a Snorkel. In addition, she also gains self-buffs when paired with other KMS SS. Overall, she is an amazing SS option.
+ |-
+ |{{IconHover|Nürnberg|4}}<br>[[a]]
+ |Nürnberg is an AA-oriented CL with meh stats and skills. Her AA is good but not high enough to AA carry as a dedicated AA unit. Her personal damage is bad, and her SS EXP buff is situational at best, since calling in SS is unreliable on auto-battle. Overall, she is a meh ship.
+ |-
+ |{{IconHover|Weser|4}}<br>[[a]]
+ |Weser is a damage-oriented CVL with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Z24|4}}<br>[[a]]
+ |Z24 is a damage-oriented DD with meh stats and skills. Collection only.
+ |-
+ |{{IconHover|Z28|4}}<br>[[a]]
+ |Z28 is a damage-oriented DD with meh stats and skills. Collection only.
+ |-
+
+
+ <!-- Khorovod of Dawn's Rime -->
+ |{{IconHover|Kirov|5}}<br>[[a]]
+ |Kirov is a damage-oriented CL with good stats and great skills. Her personal damage is pretty good due to multiple skill barrages and her increased Main Gun range. Her bulk is also decent. Overall, she is a good ship.
+ |-
+ |{{IconHover|Sovetskaya Belorussiya|5}}<br>[[a]]
+ |Sovetskaya Belorussiya is a flagship-oriented BB with great stats and skills. Her barrage is strong, and has a good pattern; although, it is a bit farther back than normal. She also has multiple heals for self-sutain over the course of fights, and even helps your Vanguard Fleet a little bit as well. Overall, she is a great ship.
+ |-
+ |{{IconHover|Tallinn|5}}<br>[[a]]
+ |Tallinn is a tank-oriented CA with great stats and skills. Her personal damage is alright due to her self-buffs and barrages, but it is still on the lower end of tank damage. Her bulk is really high due to her stats and barrier, enabling her to Main Tank any content with no issues. She is ideally equipped with a Northern Parliament or Iron Blood Main Gun for her skill. Overall, she is a great ship.
+ |-
+ |{{IconHover|Gremyashchy|4}}<br>[[a]]
+ |Gremyashchy is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Gromky|4}}<br>[[a]]
+ |Gromky is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Murmansk|4}}<br>[[a]]
+ |Murmansk is a damage-oriented CL with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Pamiat Merkuria|5||Kai}}<br>[[a]]
+ |Pamiat Merkuria is a tank-oriented CL with good stats and skills. Her personal damage is decent due to MGM+1 DD guns and a solid barrage. Her bulk is really high, especially when RNG rolls her way. Due to the RNG nature of her bulk, her tanking ability, esepcially when bossing, can be in doubt. Overall, she is a great ship. 
+ |-
+
+<!-- Daedalian Hymn -->
+ |{{IconHover|Aquila|5}}<br>[[a]]
+ |Aquila is a damage / support oriented CV with great stats and skills. Her per-strike damage is good due to her 8 plane loadout and on-strike barrage. Depending on the equip in her 2nd slot, she can change modes between damage and support. In damage mode, she gains a preload and multiple offensive buffs. In support mode, she grants healing and shield support for the fleet. Overall, she is a great ship regardless of what mode she is in. 
+ |-
+ |{{IconHover|Duca degli Abruzzi|5}}<br>[[a]]
+ |Duca degli Abruzzi is a damage-oriented CL with great stats and skills. Her personal damage is very balanced due to decent Main Guns, barrages, and her great torpedo damage. Her bulk is also pretty good as well due to her stats, and her skill 2 adds to it further. Overall, she is a great ship.
+ |-
+ |{{IconHover|Vittorio Veneto|5}}<br>[[a]]
+ |Vittorio Veneto is an off-flag oriented BB with great stats and skills. Her personal damage is high due to multiple self-buffs, good efficiencies, and a great timed barrage. She can reduce her first Main Gun salvo based on the number of other RN ships in the fleet, but that is not necessary for her to be good. The buff from using AP Guns or having RN ships from her skill 3 is nice, but not necessary for her to be good. Overall, she is a great ship.
+ |-
+ |{{IconHover|Libeccio|4}}<br>[[a]]
+ |Libeccio is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Maestrale|4}}<br>[[a]]
+ |Maestrale is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Nicoloso da Recco|4}}<br>[[a]]
+ |Nicoloso da Recco is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Torricelli|4}}<br>[[a]]
+ |Torricelli is a damage-oriented SS with bad stats and skills. Collection only.
+ |-
+
+
+<!-- Mirror Involution -->
+ |{{IconHover|New Jersey|6}}<br>[[a]]
+ |New Jersey is an off-flag oriented BB with amazing stats and skills. Her shelling damage is really high, and combined with a great barrage makes her personal damage really high. Her self-buffs (especially the Main Gun Spread reduction) are also really good, further boosting her damage. Her crossfleet skill barrage is nice, and the buff is good when using USS CVs in the other fleet. Overall, she is an amazing ship.
+ |-
+ |{{IconHover|San Francisco|5}}<br>[[a]]
+ |San Francisco is a versatile CA with great stats and skills. Her personal damage is pretty good due to her stats, barrages, and MGM+1, and it is further amplified when in the Off-Tank position. As a Main Tank, she gains damage reduction to further amplify her bulk. In the Middle position, she gives your Vanguard a heal once per battle. As an Off-Tank, she further amplifies the damage your Vanguard Fleet does. Overall, she is a great ship, regardless of which mode she is in.
+ |-
+ |{{IconHover|Ticonderoga|5}}<br>[[a]]
+ |Ticonderoga is a damage-oriented CV with great stats and skills. Her personal damage is pretty good due to 8 planes and an on-strike barrage that can inflict DoT. She also has great bulk with damage mitigation for her first few instances of damage taken, as well as a small shield for your Vanguard. Overall, she is a great ship.
+ |-
+ |{{IconHover|Boise|4}}<br>[[a]]
+ |Boise is a damage-oriented CL with average stats and skills. Her personal damage is good with MGM+1 CL guns and a barrage. Her self-buffs are nothing special, however. Overall, she is an alright ship.
+ |-
+ |{{IconHover|Morrison|4}}<br>[[a]]
+ |Morrison is a damage-oriented DD with bad stats and skills. Collection only.
+ |-
+ |{{IconHover|Independence|5||Kai}}<br>[[a]]
+ |Independence (Retrofit) is a support-oriented CV with great stats and skills. Her personal damage is really good due to an 8 plane loadaout and an on-strike barrage. She also buffs CVs both inside and outside of your fleet, and gets a self-cooldown reduction on her first airstrike. Overall, she is an amazing CV. 
+ |-
+ 
  |{{IconHover|Emden|5}}<br>[[Emden]]
  |Emden is a top CL. She has top CL damage due to her strong barrages and guns, plus an interesting torpedo gimmick. CL gun mode has more damage, but DD gun mode has slightly less damage for solid utility. Either mode works extremely well. Bulk is average, but DD gun mode's heal helps. Overall, she is VERY good. '''No ghost AA gun, meaning she doesn't drag your fleet down in AA heavy worlds.'''
  |-
@@ -391,29 +671,36 @@ This list compiles all my ship evaluations (Samvaluations), ever since I started
  ! style="width:15%"|Ship
  ! class="unsortable"|Samvaluation
  |-
+
+<!-- Atelier Ryza Collaboration -->
  |{{IconHover|Reisalin Stout|5}}<br>[[Reisalin Stout]]
- |Ryza is a damage dealer-oriented mobbing CL with amazing clearing potential within the first 30s of a battle. Her stats are very solid, and coupled with MGM+1 give her good damage output from her Main Guns. Her skills immensely buff the damage potential of all her Auxiliary barrages, and her Unique Augment Module adds more barrages to the mix. You want all the Atelier Ryza Bombs equipped on Ryza, due to the +20% crit rate buff to by barrages when equipped by her for applying "Item Mark" to enemies, and for the "Fatal Drive" Unique Augment Module barrage. After all her barrages are exhausted, she is painfully average. Amazing CL for mobbing.
+ |Ryza is a damage dealer-oriented mobbing CL with amazing clearing potential within the first 30s of a battle. Her stats are very solid, and coupled with MGM+1 give her good damage output from her Main Guns. Her skills immensely buff the damage potential of all her Auxiliary barrages, and her unique Augment Module adds more barrages to the mix. You want all the Atelier Ryza Bombs equipped on Ryza, due to the +20% crit rate buff to by barrages when equipped by her for applying "Item Mark" to enemies, and for the "Fatal Drive" unique Augment Module barrage. After all her barrages are exhausted, she is painfully average. Amazing CL for mobbing.
  |-
  |{{IconHover|Klaudia Valentz|5}}<br>[[Klaudia Valentz]]
- |Klaudia is a support-oriented CVL with interesting skills. The stats are average for a good CV, so no issues there. Her skills make her act like a healer, especially for Ryza ships. Her skill and augment barrages add to her damage, but compared to other 8-plane damage-oriented CVs, her damage is lacking due to only having 7-planes. Due to her heal being spread out, and having a pseudo preload (from the barrage activation at the start of the battle), and having better per-strike damage, Klaudia should be better than Perseus. Unicorn Retrofit is better than her regardless. Amazing Healer CVL.
+ |Klaudia is a support-oriented CVL with interesting skills. The stats are average for a good CV, so no issues there. Her skills make her act like a healer, especially for Ryza ships. Her skill and augment barrages add to her damage, but compared to other 8-plane damage-oriented CVs, her damage is lacking due to only having 7-planes. Due to her heal being spread out, and having a pseudo preload (from the barrage activation at the start of the battle), and having better per-strike damage, she is an amazing support. Unicorn Retrofit is better than her regardless. Amazing Healer CVL.
  |-
  |{{IconHover|Patricia Abelheim|5}}<br>[[Patricia Abelheim]]
  |Patricia is a flagship-oriented damage-dealer BB with great stats and amazing skills. Her stats are very standard for a good BB, and are buffed further through her skills. She has a very wide pattern, decent damage, guarenteed barrage every main gun shot, which is amazing for clearing potential. Great BB overall.
  |-
+ |{{IconHover|Kala Ideas|5}}<br>[[Kala Ideas]]
+ |Kala is a tank-oriented CB with amazing bulk and decent damage. Her stats and skills make her very tanky, and her damage output is alright with MGM+1 CB guns and some barrages. The RNG element from her Augment Skill to save her from death is a nice bonus. Top non-rainbow tank option.
+ |-
  |{{IconHover|Lila Decyrus|4}}<br>[[Lila Decyrus]]
- |Lila is a mob tank-oriented CA with decent bulk but high damage potential. Her stats, skills, and Augment give her enough bulk to mob tank most content. However, with enough stacks of her skills, her damage can really ramp up over time. Average tank, but needs more testing.
+ |Lila is a damage-oriented CA with decent bulk but high damage potential. Her stats, skills, and Augment give her decent bulk. With enough stacks of her skills, her damage can really ramp up over time. She is ideally sortied with other Ryza ships to give her maximum damage potential. Overall, she is a good ship.
  |-
  |{{IconHover|Serri Glaus|4}}<br>[[Serri Glaus]]
  |Serri is a damage-oriented CV with average stats and average skills. As a solo-CV, her damage is decent, with an 8-plane loadout, barrage on Airstrike, and the damage dealt buffs she gains throughout the battle from skills and Augments. In an Atelier fleet, her 2nd skill can activate way more frequently, and her 3rd skill can grant more AP overall to the fleet, thus increasing her contribution by a fair bit. Inside Atelier fleet: Great CV option. Outside Atelier fleet: Meh CV option.
  |-
+
+<!-- Dead or Alive Collaboration -->
  | {{IconHover|Marie Rose|5}}<br>[[Marie Rose]]
  |Marie Rose is a damage-oriented DD with great stats and skills. Her skill 1 has a barrage that will proc every 10s in most content, and her skill 2 buffs her torpedo damage even more. Her augment skill buffs her own damage more as well. Her additional support is nice, but is not necessary. Overall, she is a great ship.
  |-
  | {{IconHover|Honoka|5}}<br>[[Honoka]]
- |Honoka is a flagship-oriented BB with great stats and interesting skills. Her skill 1 has good self buffs; although some of the possible barrages are better than others. Her skill 2 has a nice damage 100% proc rate barrage which does good damage. The healing is unreliable, but it is a nice cushion alongside an actual healer-oriented ship. Overall, she is a great ship.
+ |Honoka is a flagship-oriented BB with great stats and interesting skills. Her skill 1 has good self-buffs; although some of the possible barrages are better than others. Her skill 2 has a nice damage 100% proc rate barrage which does good damage. The healing is unreliable, but it is a nice cushion alongside an actual healer-oriented ship. Overall, she is a great ship.
  |-
  | {{IconHover|Misaki|5}}<br>[[Misaki]]
- |Misaki is a damage-dealer oriented CL with good stats and skills. Her damage is pretty good with MGM+1 coupled with the self buffs and augments. Overall, she is a great ship.
+ |Misaki is a damage-dealer oriented CL with good stats and skills. Her damage is pretty good with MGM+1 coupled with the self-buffs and augments, and her bulk is fine as well. Overall, she is a great ship.
  |-
  | {{IconHover|Kasumi|5}}<br>[[Kasumi]]
  |Kasumi is a tank-oriented CA with good stats and great skills. Her damage is below average for a tank, but her bulk is amazing to compensate. You want to use magnetic torpedoes to help proc her skill 1. Her augment greatly improves her tank ability. Overall, she is a great ship.
@@ -432,6 +719,58 @@ This list compiles all my ship evaluations (Samvaluations), ever since I started
  |-
  | {{IconHover|Nyotengu|4}}<br>[[Nyotengu]]
  |Nyotengu is worse than easily acquirable good ships at her role. Collection only.
+ |-
+
+ <!-- World Spanning Arclight -->
+ |{{IconHover|Akane Shinjo|5}}<br>[[a]]
+ |Akane Shinjo is a flagship-oriented BB with great stats and skills. She has multiple 100% trigger chance barrages, as well as MGM+2 and good Main Gun damgae to go alongside them. Her augment module also grants her a summon for the early part of the battle, which adds to her damage further. She ideally prefers flagship for maximum barrage impact, but she can work at a slightly worse level when off-flag. Overall, she is a great ship.
+ |-
+ |{{IconHover|Chise Asukagawa|5}}<br>[[a]]
+ |Chise Asukagawa is a damage-oriented CV with great stats and skills. She has great personal damage with 8 planes and good stats, as well as an on-strike barrage. She also offers additional damage and support on her 1st (preloaded!) and 3rd airstrikes, which are nice to have. The Augment interaction between her and Rikka is not worth using them together for. Overall, she is a great ship.
+ |-
+ |{{IconHover|Princess Hime|5}}<br>[[a]]
+ |Princess Hime is a tank / support-oriented AE with great stats and skills. Her personal damage is alright due to MGM+1 DD guns and some self-buffs. Her support is really good, allowing her to equip both normal <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/List_Of_Cargo" title="Cargo">Cargo</a> and Gridman specific <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/List_Of_Cargo" title="Cargo">Cargo</a> at the same time. She also has enough bulk to Main Tank most content, however her being Light Armor leaves her a bit suspect to high damage HE bullets. Overall, she is a great ship.
+ |-
+ |{{IconHover|Rikka Takarada|5}}<br>[[a]]
+ |Rikka Takarada is a damage-dealer oriented CL with great stats and amazing skills. She possesses multiple strong, piercing laser barrages that deal great damage against huge waves of enemies in a row; however, during her downtime her damage is pretty underwhelming. In addition, she can equip multiple Auxiliary equipment at once, although ideally 3 of those slots are the <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Battle_Tracto_Max" title="Battle Tracto Max">Battle Tracto Max</a>, <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Buster_Borr" title="Buster Borr">Buster Borr</a>, and Gridman Calibur to get the most barrage benefits possible. Her bulk is also good enough to mob-tank most content reliably. The Augment interaction between her and Chise / Yume is not worth using them together for. Overall, she is an amazing ships when mobbing, and a great ship outside of it.
+ |-
+ |{{IconHover|The 2nd|5}}<br>[[a]]
+ |Nibanme is a flagship-oriented BB with great stats and skills. No aux guns hurts her interception capability, but her damage is very good, and comes from multiple sources. Overall, she is a great ship.
+ |-
+ |{{IconHover|Yume Minami|5}}<br>[[a]]
+ |Yume Minami is a tank-oriented CA with great stats and skills. Her bulk is a bit on the lower side for a tank, but she has above average damage to make up for it. She has multiple barrages tied to both her guns and skills, giving her great damage variety. The Augment interaction between her and Rikka is not worth using them together for. Overall, she is a great ship.
+ |-
+ |{{IconHover|Hass|4}}<br>[[a]]
+ |Hass is a damage-oriented CL with meh stats and skills. Using her to activate Rikka's skill requirement is not recommended. Collection only.
+ |-
+ |{{IconHover|Mujina|4}}<br>[[a]]
+ |Mujina is a flagship-oriented BB with meh stats and good skills. Her personal damage is good due to multiple barrages upon Main Gun Fire, but the damage is unremarkable compared to good SR BBs currently available. Overall, she is a good ship.
+ |-
+ |{{IconHover|Namiko|4}}<br>[[a]]
+ |Namiko is a damage-oriented CA with meh stats and skills. Using her to actiate Rikka's skill requirement is not recommended. Collection only.
+ |-
+
+ <!-- Azur Anthem -->
+ | {{IconHover|Azusa Miura|5}}<br>[[s]]
+ |Azusa Miura is a tank-oriented CA with great stats and skills. Her bulk is a bit on the lower side for a tank. However, she has MGM+1 CA Guns, great self-buffs, and a skill barrage to make her damage above average for a tank. She is ideally sortied with multiple other Vanguard ships to avoid the negative effect of her Skill 3. Overall, she is a great ship.
+ |-
+ | {{IconHover|Chihaya Kisaragi|5}}<br>[[s]]
+ |Chihaya Kisaragi is a damage-oriented CV with great stats and skills. She has a first-strike cooldown reduction, allowing her to desync her damage from the rest of your Main Fleet easily. She has 8 planes, and that combined with her on-strike barrage makes her damage really good. Overall, she is a great ship.
+ |-
+ | {{IconHover|Haruka Amami|5}}<br>[[s]]
+ |Haruka Amami is a support-oriented CL with average stats and skills. Her personal damage is a bit lackluster due to only 1 MGM and the skill barrage not being enough to make up for it. Her support is also not enough to justify using her over other damage options that can kill the enemy faster. Overall, she is a good ship, but she is a sidegrade / downgrade to easily accessible options.
+ |-
+ | {{IconHover|Iori Minase|5}}<br>[[s]]
+ |Iori Minase is an off-flag damage-oriented BB with good stats and meh skills. Her stats are alright, but a lack of self-buffs hinders her damage output. Her barrage is also good, and has priority targetting. Overall, she is a good ship, but she is a sidegarde / downgrade to easily accessible options.
+ |-
+ | {{IconHover|Ami Futami|4}}<br>[[a]]
+ |Ami Futami is a damage-oriented SS with meh stats and skills. Collection only.
+ |-
+ | {{IconHover|Mami Futami|4}}<br>[[a]]
+ |Mami Futami is a damage-oriented SS with meh stats and skills. Collection only.
+ |-
+ | {{IconHover|Ritsuko Akizuki|4}}<br>[[a]]
+ |Ritsuko is a support-oriented AE with good stats and skills. Her personal damage is decent due to her high FP stat, and she can equip <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/List_Of_Cargo" title="Cargo">Cargo</a> gear to offer fleet support. Overall, she is a good ship.
  |-
 |}
 
