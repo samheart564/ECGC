@@ -255,6 +255,10 @@ td span.location {
   display: none;
 }
 
+span.location > p {
+  margin: 0!important;
+}
+
 td span.normal {
   display: inline;
 }
