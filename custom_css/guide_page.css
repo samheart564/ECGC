@@ -255,6 +255,10 @@ td span.location {
   display: none;
 }
 
+span.location > p {
+  margin: 0!important;
+}
+
 td span.normal {
   display: inline;
 }
@@ -300,6 +304,11 @@ tbody.table-group-divider {
 table.tool_table {
   padding: 5px;
 }
+
+td > h5.custom-margin {
+  margin: 10px!important;
+}
+
 
 span p {
   color:black;
