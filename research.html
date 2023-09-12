@@ -10,10 +10,26 @@
         <!-- CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800' rel='stylesheet'>
+
+        <!-- NEED THIS FOR TABLE SORTING -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+        <!-- -->
+
         <link rel="stylesheet" href="custom_css\guide_page.css">
 
         <!-- JS -->
+        <!-- NEED THIS FOR TABLE SORTING -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <!-- -->
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!-- NEED THIS FOR TABLE SORT -->
+        <script src="custom_js/natural-sorting.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+        <!-- -->
+
         <script src="custom_js\guide_page.js"></script>
         <script src="https://kit.fontawesome.com/a085617b05.js" crossorigin="anonymous"></script>
         <noscript>Your browser does not support JavaScript!</noscript>
@@ -237,7 +253,7 @@
 
             <!-- Version Number -->
             <p style="text-align: center;">
-                <b>Current Version</b>: 1.1.0 | <b>Last Updated</b>: September 10th, 2023
+                <b>Current Version</b>: 1.1.1 | <b>Last Updated</b>: September 11th, 2023
             </p>
             <br>
            
@@ -369,17 +385,20 @@
 
                             <!-- Table -->
                             <div class="table-responsive">
-                                <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                                <table data-toggle="table" class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
                                     <col width="15%">
                                     <col width="50%">
                                     <col width="17.5%">
                                     <col width="17.5%">
-                                    <tr>
-                                        <th>Ship</th>
-                                        <th>Location</th>
-                                        <th>Investment Level</th>
-                                        <th>Tech Points Given</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th data-sortable="true">Ship</th>
+                                            <th data-sortable="true">Location</th>
+                                            <th data-sortable="true">Investment Level</th>
+                                            <th data-sortable="true" data-sorter="numericOnly">Tech Points Given</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
                                     <!-- Ship Cell -->
                                     <tr>
@@ -1090,6 +1109,7 @@
                                             </p>
                                         </td>
                                     </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         <br>
@@ -1133,17 +1153,20 @@
 
                             <!-- Table -->
                             <div class="table-responsive">
-                                <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                                <table table data-toggle="table" class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
                                     <col width="15%">
                                     <col width="50%">
                                     <col width="17.5%">
                                     <col width="17.5%">
-                                    <tr>
-                                        <th>Ship</th>
-                                        <th>Location</th>
-                                        <th>Investment Level</th>
-                                        <th>Tech Points Given</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th data-sortable="true">Ship</th>
+                                            <th data-sortable="true">Location</th>
+                                            <th data-sortable="true">Investment Level</th>
+                                            <th data-sortable="true" data-sorter="numericOnly">Tech Points Given</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
                                     <!-- Ship Cell -->
                                     <tr>
@@ -1378,6 +1401,7 @@
                                             </p>
                                         </td>
                                     </tr>
+                                    </tbody>
                                     
                                 </table>
                             </div>
@@ -1420,17 +1444,20 @@
 
                             <!-- Table -->
                             <div class="table-responsive">
-                                <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                                <table table data-toggle="table" class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
                                     <col width="15%">
                                     <col width="50%">
                                     <col width="17.5%">
                                     <col width="17.5%">
-                                    <tr>
-                                        <th>Ship</th>
-                                        <th>Location</th>
-                                        <th>Investment Level</th>
-                                        <th>Tech Points Given</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th data-sortable="true">Ship</th>
+                                            <th data-sortable="true">Location</th>
+                                            <th data-sortable="true">Investment Level</th>
+                                            <th data-sortable="true" data-sorter="numericOnly">Tech Points Given</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
                                     <!-- Ship Cell -->
                                     <tr>
@@ -1630,7 +1657,7 @@
                                             </p>
                                         </td>
                                     </tr>
-
+                                    </tbody>
 
                                 </table>
                             </div>
@@ -1666,17 +1693,20 @@
 
                             <!-- Table -->
                             <div class="table-responsive">
-                                <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                                <table table data-toggle="table" class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
                                     <col width="15%">
                                     <col width="50%">
                                     <col width="17.5%">
                                     <col width="17.5%">
-                                    <tr>
-                                        <th>Ship</th>
-                                        <th>Location</th>
-                                        <th>Investment Level</th>
-                                        <th>Tech Points Given</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th data-sortable="true">Ship</th>
+                                            <th data-sortable="true">Location</th>
+                                            <th data-sortable="true">Investment Level</th>
+                                            <th data-sortable="true" data-sorter="numericOnly">Tech Points Given</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
                                     <!-- Ship Cell -->
                                     <tr>
@@ -1874,8 +1904,7 @@
                                             </p>
                                         </td>
                                     </tr>
-
-
+                                    </tbody>
 
                                 </table>
                             </div>
@@ -1907,17 +1936,20 @@
 
                             <!-- Table -->
                             <div class="table-responsive">
-                                <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                                <table table data-toggle="table" class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
                                     <col width="15%">
                                     <col width="50%">
                                     <col width="17.5%">
                                     <col width="17.5%">
-                                    <tr>
-                                        <th>Ship</th>
-                                        <th>Location</th>
-                                        <th>Investment Level</th>
-                                        <th>Tech Points Given</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th data-sortable="true">Ship</th>
+                                            <th data-sortable="true">Location</th>
+                                            <th data-sortable="true">Investment Level</th>
+                                            <th data-sortable="true" data-sorter="numericOnly">Tech Points Given</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
                                     <!-- Ship Cell -->
                                     <tr>
@@ -2115,7 +2147,7 @@
                                             </p>
                                         </td>
                                     </tr>
-
+                                    </tbody>
 
                                 </table>
                             </div>
