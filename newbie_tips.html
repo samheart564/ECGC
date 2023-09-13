@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Player Tips - ECGC</title>
+        <link rel="icon" type="image/x-icon" href="images\misc\SiteIcon.ico">
+
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800' rel='stylesheet'>
+        <link rel="stylesheet" href="custom_css\guide_page.css">
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="custom_js\guide_page.js"></script>
+        <script src="https://kit.fontawesome.com/a085617b05.js" crossorigin="anonymous"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+        
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #222a42;">
+            <div class="container-fluid mt-0 m-auto col-12 col-sm-9">
+                <div class="row w-100" style="justify-content: space-between;">
+                    <div class="col-auto">
+                        <!-- Title -->
+                        <a class="navbar-brand nav-logo-custom" href="index" target="_self" rel="noopener noreferrer">
+                            <img src="images\misc\SiteIcon.png" width="40 px" alt="ECGC"></a>
+                        </a>
+                    </div>
+
+                    <div class="col-auto">
+                        <!-- Expand Button -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- Items inside Navbar -->
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0 fs-6 nav-pills">
+                                
+                                <li class="nav-item dropdown btn-group">
+                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom active" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-pencil"></i> <span>Guides</span>
+                                    </a>
+                                
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" style="background-color: #222a42;">
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="augment_module" target="_self" rel="noopener noreferrer">Augment Module</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="common_resource" target="_self" rel="noopener noreferrer">Common Resource</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item active" href="early_ship_recommendations" target="_self" rel="noopener noreferrer">Early Ship Recommendations</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="equipment" target="_self" rel="noopener noreferrer">Equipment and Shops</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="farming" target="_self" rel="noopener noreferrer">Farming</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="fleetbuilding" target="_self" rel="noopener noreferrer">Fleetbuilding</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="research" target="_self" rel="noopener noreferrer">Research</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item custom-nav-hover" href="samvaluation" target="_self" rel="noopener noreferrer">Samvaluations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="tools" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Tools">
+                                        <i class="fa fa-wrench nav-logo-custom"></i> <span>Tools</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="contributors" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Contributors">
+                                        <i class="fa fa-user-pen nav-logo-custom"></i> <span class="d-md-none">Contributors</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="changelog" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Changelog">
+                                        <i class="fa fa-clock-rotate-left nav-logo-custom"></i> <span class="d-md-none">Changelog</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="https://discord.gg/wKJKxq5WQt" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_blank" title="Join our Discord Server!">
+                                        <i class="fa-brands fa-discord"></i> <span class="d-md-none">Discord</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Table of Contents (SideNav) -->
+        <button id="sidenavButton" class="btn custom-sidenav-button z-3" onclick="toggleFunction()">
+            <i id="sidenavToggle" class="fa fa-angle-double-up"></i>
+            <span class="d-none d-sm-inline">Table of Contents</span>
+        </button>
+        
+        <div id="sidenav" class="sidenav overflow-auto">
+            <div class="container m-auto">
+                <span class="d-sm-none"><h2 class="text-center">Table of Contents</h2><hr class="custom-hr"></span>
+                <div class="toc">
+                    <ol>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#starter" onclick="toggleFunction()" class="toc_h_one">Starter Ships</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#guild_shop" onclick="toggleFunction()" class="toc_h_one">Guild Shop</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#medal_shop" onclick="toggleFunction()" class="toc_h_one">Medal Shop</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#core_data_shop" onclick="toggleFunction()" class="toc_h_one">Core Data Shop</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#map_drops" onclick="toggleFunction()" class="toc_h_one">Map Drops</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#research" onclick="toggleFunction()" class="toc_h_one">Research (PR/DR) Ships</a>
+                        </li>
+                    <ol>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Content -->
+        <div class="container mt-5 mt-sm-0 m-auto guide-content-body col-12 col-sm-9" id="main">
+            
+            <!-- Margin Buffer -->
+            <div class="row mb-3"></div>
+
+            <!-- Title -->
+            <h1 id="home">
+                <p class="fs-2 h1">
+                    <b>
+                        <u>Newbie Tips</u>
+                    </b>
+                </p>
+            </h1>
+
+            <!-- Version Number -->
+            <p style="text-align: center;">
+                <b>Current Version</b>: 1.0.0 | <b>Last Updated</b>: September 15th, 2023
+            </p>
+            <br>
+
+        </div>
+
+    </body>
+
+</html>
