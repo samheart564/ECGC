@@ -379,6 +379,23 @@ img {
   padding: 0px;
 }
 
+.shopItemContainer {
+  align-content: flex-start!important;
+  align-items: flex-start!important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopIcon {
+  overflow: hidden;
+  margin: 2px;
+  width: 60px;
+  padding: 2px;
+  box-shadow: 0 10px 25px 0 #000;
+  height: auto;
+}
+
+
 div.shipRowContainer {
   margin: 20px 10px;
   text-align: center;
