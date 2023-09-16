@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Equipment & Shops - ECGC</title>
+        <title>Shop Priority - ECGC</title>
         <link rel="icon" type="image/x-icon" href="images\misc\SiteIcon.ico">
 
         <!-- CSS -->
@@ -41,7 +41,7 @@
                         
                         <!-- Items inside Navbar -->
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav me-auto mb-0 fs-6 nav-pills">
+                            <ul class="navbar-nav me-auto md-0 fs-6 nav-pills">
 
                                 <li class="nav-item">
                                     <a href="newbie_tips" class="nav-link nav-logo-custom" rel="noopener noreferrer" target="_self" title="Tools">
@@ -50,7 +50,7 @@
                                 </li>
                                 
                                 <li class="nav-item dropdown btn-group">
-                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom active" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa fa-pencil"></i> <span>Guides</span>
                                     </a>
                                 
@@ -64,11 +64,11 @@
                                         </li>
 
                                         <li>
-                                            <a class="dropdown-item custom-nav-hover" href="early_ship_recommendations" target="_self" rel="noopener noreferrer">Early Ship Recommendations</a>
+                                            <a class="dropdown-item" href="early_ship_recommendations" target="_self" rel="noopener noreferrer">Early Ship Recommendations</a>
                                         </li>
 
                                         <li>
-                                            <a class="dropdown-item custom-nav-hover active" href="equipment" target="_self" rel="noopener noreferrer">Equipment & Misc.</a>
+                                            <a class="dropdown-item custom-nav-hover" href="equipment" target="_self" rel="noopener noreferrer">Equipment and Shops</a>
                                         </li>
 
                                         <li>
@@ -88,7 +88,7 @@
                                         </li>
 
                                         <li>
-                                            <a class="dropdown-item custom-nav-hover" href="shop_priority" target="_self" rel="noopener noreferrer">Shop Priority</a>
+                                            <a class="dropdown-item custom-nav-hover active" href="shop_priority" target="_self" rel="noopener noreferrer">Shop Priority</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -123,6 +123,54 @@
             </div>
         </nav>
 
+        <!-- Table of Contents (SideNav) -->
+        <button id="sidenavButton" class="btn custom-sidenav-button z-3" onclick="toggleFunction()">
+            <i id="sidenavToggle" class="fa fa-angle-double-up"></i>
+            <span class="d-none d-sm-inline">Table of Contents</span>
+        </button>
+        
+        <div id="sidenav" class="sidenav overflow-auto">
+            <div class="container m-auto">
+                <span class="d-sm-none"><h2 class="text-center">Table of Contents</h2><hr class="custom-hr"></span>
+                <div class="toc">
+                    <ol>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#supply" onclick="toggleFunction()" class="toc_h_one">Supply</a>
+                            <ol>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#coin" onclick="toggleFunction()" class="toc_h_two">Shop</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#merit" onclick="toggleFunction()" class="toc_h_two">Merit Shop</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#guild" onclick="toggleFunction()" class="toc_h_two">Guild Shop</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#other" onclick="toggleFunction()" class="toc_h_two">META & Prize Shop</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#monthly" onclick="toggleFunction()" class="toc_h_one">Monthly</a>
+                            <ol>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#core_data" onclick="toggleFunction()" class="toc_h_two">Core Data</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#medal" onclick="toggleFunction()" class="toc_h_two">Medal Shop</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#protocore" onclick="toggleFunction()" class="toc_h_two">Prototype Shop</a>
+                                </li>
+                            </ol>
+                        </li>    
+                    <ol>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Content -->
         <div class="container mt-5 mt-sm-0 m-auto guide-content-body col-12 col-sm-9" id="main">
             
@@ -133,39 +181,73 @@
             <h1 id="home">
                 <p class="fs-2 h1">
                     <b>
-                        <u>Equipment & Misc. Guide</u>
+                        <u>Shop Priority</u>
                     </b>
                 </p>
             </h1>
 
             <!-- Version Number -->
             <p style="text-align: center;">
-                <b>Current Version</b>: 1.3.0 | <b>Last Updated</b>: September 15th, 2023
+                <b>Current Version</b>: 0.0.1 (WIP) | <b>Last Updated</b>: September 15th, 2023
             </p>
             <br>
-           
-            <h2 id="introduction">Introduction</h2><hr class="custom-hr">
-                <p>Full Equipment Recommendations by Slot type. Also has a bunch of other miscellaneous guides.</p>
-            <br>
 
-            <h2 id="links">Links</h2><hr class="custom-hr">
-                <p>If the Embed is scuffed, try these links:</p>
-                <ul>
-                    <li>
-                        <a href="https://imgur.com/a/YoxqS7A" target="_blank" rel="noopener noreferrer">Imgur Album</a>
-                    </li>
-                    <li>
-                        <a href="https://docs.google.com/spreadsheets/d/1wWMIzaUKISAXMbOEnmsuuLkO9PesabpdTUWdosvHygM/edit#gid=979150851" target="_blank" rel="noopener noreferrer">Google Sheets Spreadsheet</a>
-                    </li>
-                    <li>
-                        <b><a href="https://docs.google.com/document/d/1rCAE3qqTF1iCnVaMj5PLpwk2urz4grkuLQKWRChBAGE/edit" rel="noopener noreferrer" target="_blank">Changelog</a></b>
-                    </li>
-                </ul>
-            <br>
+                <h2 id="introduction">Introduction</h2><hr class="custom-hr">
+                    <p>This guide is coming soon! Keep up with server updates in our <b>Discord Server</b>, linked in the Navbar above.</p>
+                <br>
 
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbKeR7WCSeg1FUx_jQ0e972FtA9tvgW8jHaiLQCPGtJEokVrSGBEZznr2qptelhxF-TXHh86yYQEUa/pubhtml?widget=true&amp;headers=false" class="custom-iframe" title="Equip & Misc. Guide"></iframe>
+                <h2 id="supply">Supply Shops</h2><hr class="custom-hr">
+                    <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="coin"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#General_Shop" title="Munitions Shop">Shop</a></h3>
+                        <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="merit"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop" title="Merit Shop">Merit Shop</a></h3>
+                        <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="guild"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop" title="Guild Shop">Guild Shop</a></h3>
+                        <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="other">META & Prize Shops</h3>
+                        <p>Coming soon.</p>
+                    <br>
+                
+
+                <h2 id="monthly">Monthly Shops</h2><hr class="custom-hr">
+                    <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="core_data"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange" title="Core Data Shop">Core Data Shop</a></h3>
+                        <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="medal"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop" title="Medal Shop">Medal Shop</a></h3>
+                        <p>Coming soon.</p>
+                    <br>
+
+                    <h3 id="protocore"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Shop" title="Prototype Shop">Prototype Shop</a></h3>
+                        <p>Coming soon.</p>
+                    <br>
 
         </div>
     </body>
+
+    <!-- bottom bar -->
+    <footer class="footer">
+        <div class="container-fluid pb-1 pt-1 overflow-auto">
+            <div class="row">
+                <div class="col" style="text-align: left;">
+                    <h6 class="title footer-style-two">Media taken from <a href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki" target="_blank" rel="noopener noreferrer">Azur Lane English Wiki</a>.</h6>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <h6 class="title footer-style">© <script type="text/javascript">document.write( new Date().getFullYear() );</script>, coded by samheart564</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </html>
