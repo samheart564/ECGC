@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shop Priority - ECGC</title>
+        <title>Core Data - ECGC</title>
         <link rel="icon" type="image/x-icon" href="images\misc\SiteIcon.ico">
 
         <!-- CSS -->
@@ -123,56 +123,9 @@
             </div>
         </nav>
 
-        <!-- Table of Contents (SideNav) -->
-        <button id="sidenavButton" class="btn custom-sidenav-button z-3" onclick="toggleFunction()">
-            <i id="sidenavToggle" class="fa fa-angle-double-up"></i>
-            <span class="d-none d-sm-inline">Table of Contents</span>
-        </button>
-        
-        <div id="sidenav" class="sidenav overflow-auto">
-            <div class="container m-auto">
-                <span class="d-sm-none"><h2 class="text-center">Table of Contents</h2><hr class="custom-hr"></span>
-                <div class="toc">
-                    <ol>
-                        <li>
-                            <a rel="noopener noreferrer" target="_self" href="#supply" onclick="toggleFunction()" class="toc_h_one">Supply</a>
-                            <ol>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#coin" onclick="toggleFunction()" class="toc_h_two">Shop</a>
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#merit" onclick="toggleFunction()" class="toc_h_two">Merit Shop</a>
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#guild" onclick="toggleFunction()" class="toc_h_two">Guild Shop</a>
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#other" onclick="toggleFunction()" class="toc_h_two">META & Prize Shop</a>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" target="_self" href="#monthly" onclick="toggleFunction()" class="toc_h_one">Monthly</a>
-                            <ol>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#core_data" onclick="toggleFunction()" class="toc_h_two">Core Data</a>
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#medal" onclick="toggleFunction()" class="toc_h_two">Medal Shop</a>
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#protocore" onclick="toggleFunction()" class="toc_h_two">Prototype Shop</a>
-                                </li>
-                            </ol>
-                        </li>    
-                    <ol>
-                </div>
-            </div>
-        </div>
-
 
         <!-- Content -->
-        <div class="container mt-5 mt-sm-0 m-auto guide-content-body col-12 col-sm-9" id="main">
+        <div id="main">
             
             <!-- Margin Buffer -->
             <div class="row mb-3"></div>
@@ -181,112 +134,235 @@
             <h1 id="home">
                 <p class="fs-2 h1">
                     <b>
-                        <u>Shop Priority</u>
+                        <u>Core Data Priority</u>
                     </b>
                 </p>
             </h1>
 
             <!-- Version Number -->
             <p style="text-align: center;">
-                <b>Current Version</b>: 0.0.1 (WIP) | <b>Last Updated</b>: September 15th, 2023
+                <b>Current Version</b>: 0.0.1 (WIP) | <b>Last Updated</b>: September 16th, 2023
             </p>
             <br>
 
-                <h2 id="introduction">Introduction</h2><hr class="custom-hr">
-                    <p>This guide is coming soon! Keep up with server updates in our <b>Discord Server</b>, linked in the Navbar above.</p>
-                <br>
+            <div class="shop">
 
-                <h2 id="supply">Supply Shops</h2><hr class="custom-hr">
-                    <p>Coming soon.</p>
-                    <br>
+                <div class="shop-priority-message">
+                    <p> - - - - - - -> Lower Priority - - - - - - -></p>
+                </div>
 
-                    <h3 id="coin"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#General_Shop" title="Munitions Shop">Shop</a></h3>
-                        <p>Coming soon.</p>
-                    <br>
+                <div class="shop-container">
 
-                    <h3 id="merit"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop" title="Merit Shop">Merit Shop</a></h3>
-                        <p>Coming soon.</p>
-                    <br>
+                    <!-- Item Row -->
+                    <div class="shop-item-row">
 
-                    <h3 id="guild"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop" title="Guild Shop">Guild Shop</a></h3>
-                        <p>Coming soon.</p>
-                    <br>
+                        <!-- Item Cell -->
+                        <div class="shop-item-cell">
 
-                    <h3 id="other">META & Prize Shops</h3>
-                        <p>Coming soon.</p>
-                    <br>
-                
-
-                <h2 id="monthly">Monthly Shops</h2><hr class="custom-hr">
-                    <p>Coming soon.</p>
-                    <br>
-
-                    <h3 id="core_data"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange" title="Core Data Shop">Core Data Shop</a></h3>
-                        <p>Coming soon.</p>
-
-                        <!-- Item Row -->
-                        <div class="shop-item-row">
-
-                            <!-- Item Cell -->
-                            <div class="shop-item-cell">
-
-                                <!-- Item Heading -->
-                                <div class="shop-item-heading">
-                                    <p>
-                                        <b>Best General Use for BB Damage (+Hit, +FP)</b>
-                                    </p>
-                                </div>
-
-
-                                <div class="shop-item-body">
-
-                                    <div class="shop-item-images">
-
-                                        <!-- Item Image -->
-                                        <div class="shop-item-icon rarity-4 border-radius-0">
-                                            <img src="images\equipment\type1shell.png" alt="Type 1 AP Shell">
-                                        </div>
-
-                                        <!-- Item Faction Image -->
-                                        <div class="shop-item-faction">
-                                            <div class="shop-item-icon-faction border-radius-0">
-                                                <img src="images\faction\IJN.png">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Item Description -->
-                                    <div class="shop-item-description">
-                                        <p>
-                                            <b>Type 1 AP Shell</b>
-                                        </p>
-                                        <p>(AKA White Shell)</p>
-                                        <p>(Core Data Shop)</p>
-                                        <p><b>Main Gun CRIT DMG +25%</b></p>
-                                        <div class="desc-buff"></div>
-                                        <p>One of the best general use BB auxes in the game, due to its combination of FP and HIT. Usually used alongside Super Heavy Shell, HSFCR, Admiralty Fire Control Table.</p>
-                                    </div>
-
-                                </div>
-    
+                            <!-- Item Heading -->
+                            <div class="shop-item-heading">
+                                <p>
+                                    <b>Best General Use for BB Damage (+Hit, +FP)</b>
+                                </p>
                             </div>
 
-                            
+
+                            <div class="shop-item-body">
+
+                                <div class="shop-item-images">
+
+                                    <!-- Item Image -->
+                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                        <img src="images\equipment\type1shell.png" alt="Type 1 AP Shell">
+                                    </div>
+
+                                    <!-- Item Faction Image -->
+                                    <div class="shop-item-faction">
+                                        <div class="shop-item-icon-faction border-radius-0">
+                                            <img src="images\faction\IJN.png">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item Description -->
+                                <div class="shop-item-description">
+                                    <p>
+                                        <b>Type 1 AP Shell</b>
+                                    </p>
+                                    <p>(AKA White Shell)</p>
+                                    <p>(Core Data Shop)</p>
+                                    <p><b>Main Gun CRIT DMG +25%</b></p>
+                                    <div class="desc-buff"></div>
+                                    <p>One of the best general use BB auxes in the game, due to its combination of FP and HIT. Usually used alongside Super Heavy Shell, HSFCR, Admiralty Fire Control Table.</p>
+                                </div>
+
+                            </div>
+
                         </div>
+
                         
+                    </div>
+
+                    <!-- Item Row -->
+                    <div class="shop-item-row">
+
+                        <!-- Item Cell -->
+                        <div class="shop-item-cell">
+
+                            <!-- Item Heading -->
+                            <div class="shop-item-heading">
+                                <p>
+                                    <b>Best General Use for BB Damage (+Hit, +FP)</b>
+                                </p>
+                            </div>
 
 
-                    <br>
+                            <div class="shop-item-body">
 
-                    <h3 id="medal"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop" title="Medal Shop">Medal Shop</a></h3>
-                        <p>Coming soon.</p>
-                    <br>
+                                <div class="shop-item-images">
 
-                    <h3 id="protocore"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Shop" title="Prototype Shop">Prototype Shop</a></h3>
-                        <p>Coming soon.</p>
-                    <br>
+                                    <!-- Item Image -->
+                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                        <img src="images\equipment\type1shell.png" alt="Type 1 AP Shell">
+                                    </div>
+
+                                    <!-- Item Faction Image -->
+                                    <div class="shop-item-faction">
+                                        <div class="shop-item-icon-faction border-radius-0">
+                                            <img src="images\faction\IJN.png">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item Description -->
+                                <div class="shop-item-description">
+                                    <p>
+                                        <b>Type 1 AP Shell</b>
+                                    </p>
+                                    <p>(AKA White Shell)</p>
+                                    <p>(Core Data Shop)</p>
+                                    <p><b>Main Gun CRIT DMG +25%</b></p>
+                                    <div class="desc-buff"></div>
+                                    <p>One of the best general use BB auxes in the game, due to its combination of FP and HIT. Usually used alongside Super Heavy Shell, HSFCR, Admiralty Fire Control Table.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Item Row -->
+                    <div class="shop-item-row">
+
+                        <!-- Item Cell -->
+                        <div class="shop-item-cell">
+
+                            <!-- Item Heading -->
+                            <div class="shop-item-heading">
+                                <p>
+                                    <b>Best General Use for BB Damage (+Hit, +FP)</b>
+                                </p>
+                            </div>
+
+
+                            <div class="shop-item-body">
+
+                                <div class="shop-item-images">
+
+                                    <!-- Item Image -->
+                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                        <img src="images\equipment\type1shell.png" alt="Type 1 AP Shell">
+                                    </div>
+
+                                    <!-- Item Faction Image -->
+                                    <div class="shop-item-faction">
+                                        <div class="shop-item-icon-faction border-radius-0">
+                                            <img src="images\faction\IJN.png">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item Description -->
+                                <div class="shop-item-description">
+                                    <p>
+                                        <b>Type 1 AP Shell</b>
+                                    </p>
+                                    <p>(AKA White Shell)</p>
+                                    <p>(Core Data Shop)</p>
+                                    <p><b>Main Gun CRIT DMG +25%</b></p>
+                                    <div class="desc-buff"></div>
+                                    <p>One of the best general use BB auxes in the game, due to its combination of FP and HIT. Usually used alongside Super Heavy Shell, HSFCR, Admiralty Fire Control Table.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Item Row -->
+                    <div class="shop-item-row">
+
+                        <!-- Item Cell -->
+                        <div class="shop-item-cell">
+
+                            <!-- Item Heading -->
+                            <div class="shop-item-heading">
+                                <p>
+                                    <b>Best General Use for BB Damage (+Hit, +FP)</b>
+                                </p>
+                            </div>
+
+
+                            <div class="shop-item-body">
+
+                                <div class="shop-item-images">
+
+                                    <!-- Item Image -->
+                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                        <img src="images\equipment\type1shell.png" alt="Type 1 AP Shell">
+                                    </div>
+
+                                    <!-- Item Faction Image -->
+                                    <div class="shop-item-faction">
+                                        <div class="shop-item-icon-faction border-radius-0">
+                                            <img src="images\faction\IJN.png">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item Description -->
+                                <div class="shop-item-description">
+                                    <p>
+                                        <b>Type 1 AP Shell</b>
+                                    </p>
+                                    <p>(AKA White Shell)</p>
+                                    <p>(Core Data Shop)</p>
+                                    <p><b>Main Gun CRIT DMG +25%</b></p>
+                                    <div class="desc-buff"></div>
+                                    <p>One of the best general use BB auxes in the game, due to its combination of FP and HIT. Usually used alongside Super Heavy Shell, HSFCR, Admiralty Fire Control Table.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <br>
+
 
         </div>
+
     </body>
 
     <!-- bottom bar -->
