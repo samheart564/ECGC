@@ -9,7 +9,7 @@ body {
 
 .guide-content-body {
   background-color: #1b1b1b;
-  border: 2px solid #252525;
+  border: 1px solid #252525;
 }
 
 h1 {
@@ -560,18 +560,18 @@ div.modifiedShipRowContainer {
   transform-origin: bottom left;
   transition: 0.5s;
   background-color: #1b1b1b;
-  border: 2px solid gray;
+  border: 1px solid gray;
   color: hsla(0,0%,100%,.9);
 }
 
 .custom-sidenav-button:hover {
-  border: 2px solid pink;
+  border: 1px solid pink;
   background-color: #363636;
   color: hsla(0,0%,100%,.9);
 }
 
 .custom-sidenav-button.toggle {
-  border: 2px solid pink;
+  border: 1px solid pink;
   background-color: #363636;
   color: hsla(0,0%,100%,.9);
 }
@@ -601,6 +601,7 @@ iframe.custom-iframe {
   writing-mode: vertical-lr;
   text-align: center;
   max-width: 25px;
+  overflow: hidden;
 }
 
 .shop-priority-message > p {
@@ -609,7 +610,9 @@ iframe.custom-iframe {
 
 
 .shop-container {
-  overflow-x: auto;
+  overflow: auto;
+  border: 1px solid grey;
+  width: 100%;
 }
 
 .shop-item-row {
@@ -617,11 +620,10 @@ iframe.custom-iframe {
   flex-flow: nowrap;
   align-items: flex-start;
   min-width: 100%;
-  overflow-y: hidden;
 }
 
 .shop-item-cell {
-  /* border around outside of cell */
+  /* external cell borders */
   border: 1px solid grey;
   min-width: 300px;
   padding: 0px;
@@ -682,7 +684,6 @@ iframe.custom-iframe {
   overflow: hidden;
   width: 75px;
   padding: 2px;
-  box-shadow: 0 10px 25px 0 #000;
   height: 75px;
   /* border between icon and faction */
   border-bottom: 1px solid grey;
@@ -690,9 +691,11 @@ iframe.custom-iframe {
 
 .shop-item-icon-faction {
   overflow: hidden;
-  width: 75px;
+  max-width: 75px;
   padding: 2px;
-  height: 75px;
+  max-height: 75px;
+  width: auto;
+  height: auto;
   margin: auto!important;
   text-align: center;
 }
@@ -700,4 +703,51 @@ iframe.custom-iframe {
 .shop-item-icon-faction > img {
   width: 60px;
   max-height: 75px;
+}
+
+.shop-item-icon-faction-de {
+  overflow: hidden;
+  width: 75px;
+  padding: 2px;
+  margin-top: 10px;
+  height: 75px;
+  margin: auto!important;
+  text-align: center;
+}
+
+
+.shop-item-cell.high-priority {
+  /* external cell borders */
+  border: 1px solid red;
+  
+  .shop-item-icon {
+    border-bottom: 1px solid red;
+  }
+
+  .shop-item-images {
+    border-right: 1px solid red;
+  }
+
+  .shop-item-heading {
+    border-bottom: 1px solid red;
+  }
+
+}
+
+.shop-item-cell.niche-priority {
+  /* external cell borders */
+  border: 1px solid greenyellow;
+  
+  .shop-item-icon {
+    border-bottom: 1px solid greenyellow;
+  }
+
+  .shop-item-images {
+    border-right: 1px solid greenyellow;
+  }
+
+  .shop-item-heading {
+    border-bottom: 1px solid greenyellow;
+  }
+
 }
