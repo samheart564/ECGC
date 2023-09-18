@@ -9,7 +9,7 @@ body {
 
 .guide-content-body {
   background-color: #1b1b1b;
-  border: 1px solid #252525;
+  border: 2px solid #252525;
 }
 
 h1 {
@@ -396,7 +396,7 @@ img {
 }
 
 
-
+/* Ship Row Containers */
 
 div.shipRowContainer {
   margin: 20px 10px;
@@ -560,18 +560,18 @@ div.modifiedShipRowContainer {
   transform-origin: bottom left;
   transition: 0.5s;
   background-color: #1b1b1b;
-  border: 1px solid gray;
+  border: 2px solid gray;
   color: hsla(0,0%,100%,.9);
 }
 
 .custom-sidenav-button:hover {
-  border: 1px solid pink;
+  border: 2px solid pink;
   background-color: #363636;
   color: hsla(0,0%,100%,.9);
 }
 
 .custom-sidenav-button.toggle {
-  border: 1px solid pink;
+  border: 2px solid pink;
   background-color: #363636;
   color: hsla(0,0%,100%,.9);
 }
