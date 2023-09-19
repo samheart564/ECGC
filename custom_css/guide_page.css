@@ -90,8 +90,12 @@ a.custom-nav-hover:hover {
 }
 
 p {
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0,0%,100%,.75);
   font-size: medium;
+}
+
+p.nospace {
+  margin: 0;
 }
 
 ul {
@@ -590,9 +594,19 @@ iframe.custom-iframe {
 
 /* Shop Priority */
 
+.overarcing-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .shop {
   display: flex;
-  margin: 5px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
 }
 
 .shop-priority-message {
@@ -600,8 +614,7 @@ iframe.custom-iframe {
   border-right: 0;
   writing-mode: vertical-lr;
   text-align: center;
-  max-width: 25px;
-  overflow: hidden;
+  width: 25px;
 }
 
 .shop-priority-message > p {
@@ -612,20 +625,33 @@ iframe.custom-iframe {
 .shop-container {
   overflow: auto;
   border: 1px solid grey;
-  width: 100%;
+  width: 1507px;
+
+  @media screen and (max-width: 1507px) {
+    padding-bottom: 3px;
+  }
+
 }
 
 .shop-item-row {
   display: flex;
   flex-flow: nowrap;
   align-items: flex-start;
-  min-width: 100%;
+  width: fit-content;
 }
 
 .shop-item-cell {
   /* external cell borders */
   border: 1px solid grey;
-  min-width: 300px;
+  width: 301px;
+  padding: 0px;
+}
+
+.shop-item-cell-filler {
+  /* external cell borders */
+  border: 1px solid grey;
+  width: 301px;
+  height: 174px;
   padding: 0px;
 }
 
@@ -638,7 +664,7 @@ iframe.custom-iframe {
   /* border between heading and rest of content */
   border-bottom: 1px solid grey;
   overflow: hidden;
-  max-height: 22px;
+  height: 22px;
 }
 
 .shop-item-heading > p {
@@ -650,21 +676,23 @@ iframe.custom-iframe {
 .shop-item-body {
   display: flex;
   align-items: flex-start;
-  max-width: 300px;
+  width: 300px;
   overflow: hidden;
 }
 
 .shop-item-images {
-  max-width: 75px;
-  max-height: 150px;
+  width: 75px;
+  height: 150px;
   /* border between images & desc */
   border-right: 1px solid grey;
 }
 
 .shop-item-description {
-  max-width: 225px;
-  margin-left: 4px;
-  max-height: 150px;
+  width: 225px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -736,18 +764,18 @@ iframe.custom-iframe {
 
 .shop-item-cell.niche-priority {
   /* external cell borders */
-  border: 1px solid greenyellow;
+  border: 1px solid palegreen;
   
   .shop-item-icon {
-    border-bottom: 1px solid greenyellow;
+    border-bottom: 1px solid palegreen;
   }
 
   .shop-item-images {
-    border-right: 1px solid greenyellow;
+    border-right: 1px solid palegreen;
   }
 
   .shop-item-heading {
-    border-bottom: 1px solid greenyellow;
+    border-bottom: 1px solid palegreen;
   }
 
 }
