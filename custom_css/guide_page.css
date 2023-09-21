@@ -598,9 +598,44 @@ iframe.custom-iframe {
 /* Shop Priority */
 
 .overarcing-container {
-  margin: 20px;
+  margin: 2px;
+}
+
+.shop-column-heading-container {
   display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.priority-heading-filler {
+  width: 25px;
+  border: 1px solid grey;
+  height: 25px;
+  margin: none;
+}
+
+.shop-column-heading-1 {
+  border: 1px solid grey;
+  text-align: center;
+  width: 301.5px;
+  height: 25px;
+  margin: none;
+}
+
+.shop-column-heading-2 {
+  border: 1px solid grey;
+  text-align: center;
+  width: 603px;
+  height: 25px;
+  margin: none
+}
+
+.shop-column-heading-3 {
+  border: 1px solid grey;
+  text-align: center;
+  width: 904px;
+  height: 25px;
+  margin: none
 }
 
 .shop {
