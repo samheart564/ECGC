@@ -56,6 +56,26 @@ function toggleFunction() {
   }
 }
 
+function catchupToggleFunction() {
+  // var button = document.getElementById("catchupButton");
+  var content = document.getElementById("catchupToggleContent")
+  var icon = document.getElementById("catchupToggle");
+
+  if (content.classList.contains("d-none")) {
+    content.classList.toggle("d-none");
+    icon.classList.remove("fa-angle-down");
+    icon.classList.add("fa-angle-up");
+  }
+
+  else {
+    content.classList.toggle("d-none");
+    icon.classList.remove("fa-angle-up");
+    icon.classList.add("fa-angle-down");
+  }
+
+}
+
+
 // document.getElementsByClassName("toc_h_one").onclick = toggleFunction();
 // document.getElementsByClassName("toc_h_two").onclick = toggleFunction();
 // document.getElementsByClassName("toc_h_three").onclick = toggleFunction();
