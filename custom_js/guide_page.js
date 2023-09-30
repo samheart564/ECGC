@@ -60,15 +60,18 @@ function catchupToggleFunction() {
   // var button = document.getElementById("catchupButton");
   var content = document.getElementById("catchupToggleContent")
   var icon = document.getElementById("catchupToggle");
+  var button = document.getElementById("catchupButton");
 
   if (content.classList.contains("d-none")) {
     content.classList.toggle("d-none");
+    button.classList.toggle("active");
     icon.classList.remove("fa-angle-down");
     icon.classList.add("fa-angle-up");
   }
 
   else {
     content.classList.toggle("d-none");
+    button.classList.toggle("active");
     icon.classList.remove("fa-angle-up");
     icon.classList.add("fa-angle-down");
   }
