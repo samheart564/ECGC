@@ -11,11 +11,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800' rel='stylesheet'>
         <link rel="stylesheet" href="custom_css\guide_page.css">
+        <link href="custom_css\fontawesome\css\fontawesome.css" rel="stylesheet">
+        <link href="custom_css\fontawesome\css\brands.css" rel="stylesheet">
+        <link href="custom_css\fontawesome\css\solid.css" rel="stylesheet">
 
         <!-- JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="custom_js\guide_page.js"></script>
-        <script src="https://kit.fontawesome.com/a085617b05.js" crossorigin="anonymous"></script>
         <noscript>Your browser does not support JavaScript!</noscript>
         
     </head>
@@ -50,7 +52,7 @@
                                 </li>
                                 
                                 <li class="nav-item dropdown btn-group">
-                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="#" class="nav-link dropdown-toggle nav-logo-custom active" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa fa-pencil"></i> <span>Guides</span>
                                     </a>
                                 
@@ -68,7 +70,7 @@
                                         </li>
 
                                         <li>
-                                            <a class="dropdown-item custom-nav-hover" href="equipment" target="_self" rel="noopener noreferrer">Equipment and Shops</a>
+                                            <a class="dropdown-item custom-nav-hover" href="equipment" target="_self" rel="noopener noreferrer">Equipment and Misc.</a>
                                         </li>
 
                                         <li>
@@ -155,7 +157,7 @@
                             <a rel="noopener noreferrer" target="_self" href="#monthly" onclick="toggleFunction()" class="toc_h_one">Monthly</a>
                             <ol>
                                 <li>
-                                    <a rel="noopener noreferrer" target="_self" href="#core_data" onclick="toggleFunction()" class="toc_h_two">Core Data</a>
+                                    <a rel="noopener noreferrer" target="_self" href="#core_data" onclick="toggleFunction()" class="toc_h_two">Core Data Shop</a>
                                 </li>
                                 <li>
                                     <a rel="noopener noreferrer" target="_self" href="#medal" onclick="toggleFunction()" class="toc_h_two">Medal Shop</a>
@@ -164,7 +166,15 @@
                                     <a rel="noopener noreferrer" target="_self" href="#protocore" onclick="toggleFunction()" class="toc_h_two">Prototype Shop</a>
                                 </li>
                             </ol>
-                        </li>    
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" target="_self" href="#event" onclick="toggleFunction()" class="toc_h_one">Event</a>
+                            <ol>
+                                <li>
+                                    <a rel="noopener noreferrer" target="_self" href="#major_event" onclick="toggleFunction()" class="toc_h_two">Major Event Shop</a>
+                                </li>
+                            </ol>
+                        </li>
                     <ol>
                 </div>
             </div>
@@ -181,57 +191,2065 @@
             <h1 id="home">
                 <p class="fs-2 h1">
                     <b>
-                        <u>Shop Priority</u>
+                        <u>Shop Priority Guide</u>
                     </b>
                 </p>
             </h1>
 
             <!-- Version Number -->
-            <p style="text-align: center;">
-                <b>Current Version</b>: 0.0.1 (WIP) | <b>Last Updated</b>: September 15th, 2023
+            <p class="text-center title-subheading nospace">
+                <b>Author(s)</b>: <span class="author-name">Riceist, Samheart564</span>
+                <br>
+                <b>Current Version</b>: <span class="version-number">1.0.0</span> | <b>Last Updated</b>: <span class="last-updated">October 1st, 2023</span>
             </p>
             <br>
 
                 <h2 id="introduction">Introduction</h2><hr class="custom-hr">
-                    <p>This guide is coming soon! Keep up with server updates in our <b>Discord Server</b>, linked in the Navbar above.</p>
+                    <p>Goes over all the permanent shops in Azur Lane, and what to obtain from them.</p>
+                <br>
+
+                <h2 id="notes">Notes:</h2><hr class="custom-hr">
+                    <ul>
+                        <li>
+                            <p>For the full shop list, see <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange" title="Core Data">this wiki page</a>.</p>
+                        </li>
+                        <li>
+                            <p><b>To view Resource Income, see the <a rel="noopener noreferrer" target="_blank" href="common_resource" title="Common Resource Guide">Common Resource Guide</a>.</b></p>
+                        </li>
+                        <li>
+                            <p>All times listed are in Azur Lane EN Server time (UTC-7).</p>
+                        </li>
+                        <li>
+                            <p>Never refresh a shop using <img src="images\materials\gem.png" width="25px" alt="Gems">. It is not worth it.</p>
+                        </li>
+                        <li>
+                            <p>To view the wiki page for a specific item, click on its image.</p>
+                        </li>
+                        <li>
+                            <p><b>If you already have enough of an item, feel free to skip it in subsequent months</b>. There is no point in buying extra items you will never use.</p>
+                        </li>
+                        <li>
+                            <p><b>Key:</b></p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <b style="color: lightcoral">Red Outline:</b> - Highly recommended purchase, very general use.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b style="color: palegreen">Green Outline:</b> - Really good in specific scenarios; niche; only good on a few ships.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Items are ordered from left to right, top to bottom. Depending on your situation, items marked with a <b style="color: palegreen">Green</b> outline could be <u>higher or lower</u> priority than listed.</p>
+                        </li>
+                        <li>
+                            <h3>The tables are scrollable horizontally!!</h3>
+                        </li>
+                    </ul>
                 <br>
 
                 <h2 id="supply">Supply Shops</h2><hr class="custom-hr">
-                    <p>Coming soon.</p>
-                    <br>
 
                     <h3 id="coin"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#General_Shop" title="Munitions Shop">Shop</a></h3>
-                        <p>Coming soon.</p>
+
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                        
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\coin.png" width="25px" alt="Coin"></p>
+                                </li>
+                                <li>
+                                    <p>Reset: Daily at <b>00:00</b>, <b>12:00</b>, <b>18:00</b> (UTC-7).
+                                </li>
+                            </ul>
+                        <br>
+
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                        <ul>
+                            <li>
+                                <p>
+                                    <i>
+                                        <b>Never buy items in this shop using <img src="images\materials\gem.png" width="25px" alt="Gems">. It is not worth it, regardless of how low the price is.</b>
+                                    </i>
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <div class="overarcing-container shiprowcontainerfont">
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+        
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Construction" title="Wisdom Cube">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\wisdom_cube.png" alt="Wisdom Cube">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Wisdom Cube
+                                        </a>
+                                    </div>
+                                    <!-- <div class="location-note">
+                                        <p class="nospace"><a href="common_resource" target="_self" rel="noopener noreferrer" title="Common Resource Guide">Location</a></p>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\t4_box.png" alt="Tech Boxes">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Tech Boxes
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>USS > Rest<br>New Players Only.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class" title="T3 Skill Book">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\unknown_t3_book.png" alt="T3 Skill Book">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Skill Book
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Equipment#Upgrade_(Enhance)" title="T3 Plate">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\unknown_t3_plate.png" alt="T3 Plate">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Plates
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>General > Main Gun / Aircraft.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\full_course.png" alt="Full Course">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Full Course
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Royal Gourmet">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\royal_gourmet.png" alt="Royal Gourmet">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Royal Gourmet
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Naval Curry">
+                                            <div class="icon rarity-2 border-radius-0">
+                                                <img src="images\materials\naval_curry.png" alt="Naval Curry">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Naval Curry
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     <br>
 
                     <h3 id="merit"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Merit_Shop" title="Merit Shop">Merit Shop</a></h3>
-                        <p>Coming soon.</p>
+                        
+
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                        
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\merit.png" width="25px" alt="Merit"></p>
+                                </li>
+                                <li>
+                                    <p>Reset: Daily at <b>00:00</b> (UTC-7).
+                                </li>
+                            </ul>
+                        <br>
+
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                        <ul>
+                            <li>
+                                <p>
+                                    <i>Some ships in this shop could be necessary for <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" title="Fleet Technology">Fleet Technology</a> purposes, see the <a href="research#tech_points" target="_self" rel="noopener noreferrer">Research Guide</a> for more details.</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i>Do NOT buy duplicate ship copies here; it is more expensive than buying a Prototype Bulin MKII (Gold Bulin).</i>
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <div class="overarcing-container shiprowcontainerfont">
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" title="Prototype Bulin MKII">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\gold_bulin.png" alt="Prototype Bulin MKII">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Prototype<br>Bulin MKII
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Construction" title="Wisdom Cube">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\wisdom_cube.png" alt="Wisdom Cube">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Wisdom Cube
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\t4_box.png" alt="Tech Boxes">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Tech Boxes
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>USS > Rest<br>New Players Only.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" title="Universal Bulin">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\purple_bulin.png" alt="Universal Bulin">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Universal<br>Bulin
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>Only if needed.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
                     <br>
 
                     <h3 id="guild"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Guild_Shop" title="Guild Shop">Guild Shop</a></h3>
-                        <p>Coming soon.</p>
+                        
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                        
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\guild_coin.png" width="25px" alt="Guild Coin"></p>
+                                </li>
+                                <li>
+                                    <p>Reset: Monday and Friday at <b>00:00</b> (UTC-7). In addition, you get <b>1</b> manual refresh for 50 <img src="images\materials\guild_coin.png" width="25px" alt="Guild Coin"> between resets.
+                                </li>
+                            </ul>
+                        <br>
+
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                        <ul>
+                            <li>
+                                <p>
+                                    <i>Some ships in this shop could be necessary for <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" title="Fleet Technology">Fleet Technology</a> purposes, see the <a href="research#tech_points" target="_self" rel="noopener noreferrer">Research Guide</a> for more details.</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i>
+                                        <b>Buying duplicate ship copies here for <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Breaks</a> is fine!</b>
+                                    </i>
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <div class="overarcing-container shiprowcontainerfont">
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Unicorn" title="Unicorn">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\UnicornIcon.png" alt="Unicorn">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Unicorn
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>VERY IMPORTANT</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Helena" title="Helena">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\ship_icons\HelenaIcon.png" alt="Helena">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Helena
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Portland" title="Portland">
+                                            <div class="icon rarity-2 border-radius-0">
+                                                <img src="images\ship_icons\PortlandIcon.png" alt="Portland">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Portland
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Pennsylvania" title="Pennsylvania">
+                                            <div class="icon rarity-2 border-radius-0">
+                                                <img src="images\ship_icons\PennsylvaniaIcon.png" alt="Pennsylvania">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Pennsylvania
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>If lacking BBs.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\t4_box.png" alt="Tech Boxes">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Tech Boxes
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>USS > Rest<br>New Players Only.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Equipment#Upgrade_(Enhance)" title="T4 Plate">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\unknown_t4_plate.png" alt="T4 Plate">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T4 Plate
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>Main Gun / Aircraft preferred.</p>
+                                    </div>
+                                </div>
+
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Chip">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\cognitive_chip.png" alt="Cognitive Chip">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Cognitive Chips
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class" title="T3 Skill Book">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\unknown_t3_book.png" alt="T3 Skill Book">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Skill Book
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>Offense > Support</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Retrofit" title="T3 Retrofit Blueprint">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\unknown_t3_bp.png" alt="T3 Retrofit Blueprint">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Retrofit Blueprint
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Equipment#Upgrade_(Enhance)" title="T3 Plate">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\unknown_t3_plate.png" alt="T3 Plate">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Plates
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>General > Main Gun / Aircraft.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Retrofit" title="T2 Retrofit Blueprint">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\unknown_t2_bp.png" alt="T2 Retrofit Blueprint">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T2 Retrofit Blueprint
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class" title="T2 Skill Book">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\unknown_t2_book.png" alt="T2 Skill Book">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T2 Skill Book
+                                        </a>
+                                    </div>
+                                    <div class="description-note align-bottom">
+                                        <p>Offense > Support</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\full_course.png" alt="Full Course">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Full Course
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Royal Gourmet">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\royal_gourmet.png" alt="Royal Gourmet">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Royal Gourmet
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
                     <br>
 
                     <h3 id="other">META & Prize Shops</h3>
-                        <p>Coming soon.</p>
+                        <p>Everything in these shops is collection only. Just buy what you want / need from them.</p>
                     <br>
                 
 
                 <h2 id="monthly">Monthly Shops</h2><hr class="custom-hr">
-                    <p>Coming soon.</p>
-                    <br>
 
                     <h3 id="core_data"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Core_Exchange" title="Core Data Shop">Core Data Shop</a></h3>
-                        <p>Coming soon.</p>
+
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                            
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\core_data.png" width="25px" alt="Core Data"></p>
+                                </li>
+                                <li>
+                                    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+                                </li>
+                            </ul>
+                        <br>
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                        <ul>
+                            <li>
+                                <p>
+                                    <i>Click on a gear image to go to its wiki page.</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i>Aim for a minimum of 3 pairs of <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Type_1_Armor_Piercing_Shell" title="Type 1 Armor Piercing Shell">Type 1 Armor Piercing Shells</a> + <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Super_Heavy_Shell" title="Super Heavy Shell">Super Heavy Shells</a>.</i>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="overarcing-container">
+                            <div class="shop">
+
+                                <div class="shop-priority-message d-sm-none large-font">
+                                    <p> - - - - - - -> Lower Priority - - - - - - -></p>
+                                </div>
+
+                                <div class="shop-priority-message d-none d-sm-inline larger-font">
+                                    <p> - - - - - - -> Lower Priority - - - - - - -></p>
+                                </div>
+
+
+                                <div class="shop-container">
+
+                                    <!-- Item Row (High Priority) -->
+
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell high-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Best General Use for BB Damage (+Hit, +FP)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Type_1_Armor_Piercing_Shell" title="Type 1 Armor Piercing Shell">
+                                                            <img src="images\equipment\type1shell.png" alt="Type 1 AP Shell">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\IJN.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Type 1 AP Shell</b>
+                                                    </p>
+                                                    <p>(AKA White Shell)</p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>Main Gun CRIT DMG +25%</b></p>
+                                                    <p>One of the best general use BB auxes in the game, due to its combination of FP and HIT. Usually used alongside <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Super_Heavy_Shell" title="Super Heavy Shell">Super Heavy Shell</a>, <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/High_Performance_Fire_Control_Radar" title="High Performance Fire Control Radar">High Standard Fire-Control Radar</a>, <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Admiralty_Fire_Control_Table" title="Admiralty Fire Control Table">Admiralty Fire Control Table</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell high-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Best General Use for BB Damage (+FP)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Super_Heavy_Shell" title="Super Heavy Shell">
+                                                            <img src="images\equipment\super_heavy_shell.png" alt="Super Heavy Shell">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\USS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Super Heavy Shell</b>
+                                                    </p>
+                                                    <p>(AKA Black Shell)</p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>Main Gun CRIT Rate +8%</b></p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>One of the best general use BB auxes in the game for damage. Usually used alongside <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Type_1_Armor_Piercing_Shell" title="Type 1 Armor Piercing Shell">Type 1 AP Shell</a>, <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/High_Performance_Fire_Control_Radar" title="High Performance Fire Control Radar">High Standard Fire-Control Radar</a>, <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Admiralty_Fire_Control_Table" title="Admiralty Fire Control Table">Admiralty Fire Control Table</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell high-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Top Tier CV (post-Retrofit)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-3 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Independence" title="Independence">
+                                                            <img src="images\ship_icons\IndependenceIcon.png" alt="Independence">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\USS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Independence</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Has an excellent barrage, plane loadout, efficiencies, and an amazing retrofit skill (Supporting Wings). Requires retrofit to be good. Only high priority if you lack good CVs.
+                                                        <br>
+                                                        <b>You only need 1 copy of her</b>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Increases Level Cap from 120 -> 125</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Array">
+                                                            <img src="images\materials\cognitive_array.png" alt="Cognitive Array">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\Universal.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Cogntiive Array</b>
+                                                    </p>
+                                                    <p>(<a href="common_resource#coggies" target="_self" rel="noopener noreferrer">Cognitive Array Locations</a>)</p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        The higher your ship's level, the more damage they do and the less damage they take.
+                                                        <br>
+                                                        <i>Hard to get outside of Core Data Shop.</i>
+                                                        <br>
+                                                        <b>Not to be confused with <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Chip">Cognitive Chips</a>!</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Increases Level Cap from 100 -> 125</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Chip">
+                                                            <img src="images\materials\cognitive_chip.png" alt="Cognitive Chip">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\Universal.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Cogntiive Chip</b>
+                                                    </p>
+                                                    <p>(<a href="common_resource#coggies" target="_self" rel="noopener noreferrer">Cognitive Chip Locations</a>)</p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        The higher your ship's level, the more damage they do and the less damage they take.
+                                                        <br>
+                                                        <b>Not to be confused with <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Array">Cognitive Arrays</a>!</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    <!-- Item Row (Medium Priority) -->
+
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Category:Guided-missile_destroyers" title="Category:Guided-missile destroyers">Guided-missile Destroyers</a> (+DMG)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/SY-1_Missile" title="SY-1 Missile">
+                                                            <img src="images\equipment\sy-1_missile.png" alt="SY-1 Missile">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction-de border-radius-0">
+                                                            <img src="images\faction\DE.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>SY-1 Missile</b>
+                                                    </p>
+                                                    <p>(Core Data Shop, <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Joint_Battle_Mystery_Investigation" title="Joint Battle Mystery Investigation">Joint Battle Mystery Investigation</a>)</p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Best (and only) Missile equipment in the entire game.
+                                                        <br>
+                                                        <br>
+                                                        <b>Only usable on <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Category:Guided-missile_destroyers" title="Category:Guided-missile destroyers">Guided-missile Destroyers</a> (DDG).</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Category:Guided-missile_destroyers" title="Category:Guided-missile destroyers">Guided-missile Destroyers</a> (+DMG)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Seal_of_the_Four_Gods" title="Seal of the Four Gods">
+                                                            <img src="images\equipment\seal_of_the_four_gods.png" alt="Seal of the Four Gods">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction-de border-radius-0">
+                                                            <img src="images\faction\DE.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Seal of the Four Gods</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>If Equipped by an <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Category:Anshan_class" title="Category:Anshan Class">Anshan Class</a> DD: +16% Main Gun DMG, improve All-out-Assault.</b></p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Has 50 extra HP over a <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Repair_Toolkit#Type_3-0" title="Repair Toolkit">Repair Toolkit</a>, alongside all the buffs it gives to <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Category:Anshan_class" title="Category:Anshan Class">Anshan Class</a> DDs.
+                                                        
+                                                        <b>Only equippable by DDs!</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For Submarines (+OXY)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Improved_Snorkel" title="Improved Snorkel">
+                                                            <img src="images\equipment\snorkel.png" alt="Improved Snorkel">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\KMS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Improved Snorkel</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Gives a large quantity of OXY to Submarines, allowing them to stay underwater longer (and therefore fire more Torpedoes).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For Submarines (+Geometric Accuracy)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-3 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Pressure_Resistant_Hull_Design" title="Pressure Resistant Hull Design">
+                                                            <img src="images\equipment\pressure-resistant_hull.png" alt="Improved Snorkel">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\KMS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Pressure-Resistant Hull Design</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>+20% SPD, moves Submarines forward another 8 units when entering battle.</b></p>
+                                                    <p>
+                                                        Moves Submarines closer to enemy ships, making it easier to target and fire Torpedoes at enemies.
+                                                        <i>Some ships' skils move them forward already (ex. <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/U-101" title="U-101">U-101</a>), making this equipment redundant.</i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    <!-- Item Row (Medium Priority) -->
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For CV Timing Adjustment</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-3 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Homing_Beacon" title="Homing Beacon">
+                                                            <img src="images\equipment\homing_beacon.png" alt="Homing Beacon">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\HMS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Homing Beacon</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>-4% Airstrike Load Time.</b></p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Has less AVI compared to a <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Steam_Catapult#Type_3-0" title="Steam Catapult">Steam Catapult</a>, but provides timing adjustment that could be situationally useful.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For CV Timing Adjustment</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-3 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Elite_Aviation_Maintenance_Manjuu" title="Elite Aviation Maintenance Manjuu">
+                                                            <img src="images\equipment\aviation_manjuu.png" alt="Elite Aviation Maintenance Manjuu">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\Universal.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Elite Aviation Maintenance Manjuu</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>+4% DMG, +4% Airstrike Load time.</b></p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Has less AVI compared to a <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Steam_Catapult#Type_3-0" title="Steam Catapult">Steam Catapult</a>, but the increased DMG dealt can make up for the stat difference. Provides timing adjustment that could be situationally useful.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For Medium Armor CBs</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/VH_Armor_Plating" title="VH Armor Plating">
+                                                            <img src="images\equipment\vh_armor.png" alt="VH Armor Plating">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\IJN.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>VH Armor Plating</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>Heavy Armor: -6% AP DMG taken, -3% HE/Normal DMG Taken; Medium Armor: change Armor from Medium -> Heavy</b></p>
+                                                    <p>
+                                                        Drastically increases bulk from enemy pellets, and decreases bulk from enemy planes/torpoedoes. <i>Mainly used on Medium Armor CBs; not good on Heavy Armor ships.</i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+ 
+
+                                    <!-- Item Row (Medium Priority) -->
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell niche-priority">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>For HMS BBs ONLY</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/6CRH_Armor_Piercing_Shell" title="6CRH AP Shell">
+                                                            <img src="images\equipment\6crh_shell.png" alt="6CRH AP Shell">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\HMS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>6CRH AP Shell</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    <p><b>When equipped on a <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Royal_Navy" title="Royal Navy">Royal Navy</a> ship, +30% Main Gun CRIT DMG.</b></p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Comparable to / very slightly better than the <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Type_1_Armor_Piercing_Shell" title="Type 1 Armor Piercing Shell">Type 1 Armor Piercing Shell</a> on <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Royal_Navy" title="Royal Navy">Royal Navy</a> ships.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Great +FP Auxiliary (for Vanguard ships)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-3 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Intel_Report_-_Arctic_Stronghold" title="Intel Report - Arctic Stronghold">
+                                                            <img src="images\equipment\intel_report_arctic_stronghold.png" alt="Intel Report - Arctic Stronghold">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\Universal.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Intel Report - Arctic Stronghold</b>
+                                                    </p>
+                                                    <p>(Core Data Shop <b style="color: greenyellow">Ltd.</b>)</p>
+                                                    <p><b>-6% DMG Taken from Siren Enemies (does not stack).</b></p>
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Provides a good balance of FP and HP, and is the only good +FP aux for DDs.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Best +FP Auxiliary (for Cruisers)</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-4 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Funkmess-Ortung_25_Radar" title="FuMO 25">
+                                                            <img src="images\equipment\fumo25.png" alt="FuMO 25">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\KMS.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>FuMO 25</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Provides a great +FP and +ACC stat boost in exchange for sacrificing survivability compared to other Auxiliary equipment
+                                                        <br>
+                                                        <i>Only good on Vanguard ships; other auxes are better for Main Fleet.</i>
+                                                        <br>
+                                                        <b>Can only equip 1 per ship.</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item Cell -->
+                                        <div class="shop-item-cell">
+
+                                            <!-- Item Heading -->
+                                            <div class="shop-item-heading">
+                                                <p>
+                                                    <b>Best +TRP Auxiliary</b>
+                                                </p>
+                                            </div>
+
+
+                                            <div class="shop-item-body">
+
+                                                <div class="shop-item-images">
+
+                                                    <!-- Item Image -->
+                                                    <div class="shop-item-icon rarity-5 border-radius-0">
+                                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Type_93_Pure_Oxygen_Torpedo#Type_3-0" title="Type 93 Pure Oxygen Torpedo">
+                                                            <img src="images\equipment\oxytorp.png" alt="Type 93 Pure Oxygen Torpedo">
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- Item Faction Image -->
+                                                    <div class="shop-item-faction">
+                                                        <div class="shop-item-icon-faction border-radius-0">
+                                                            <img src="images\faction\IJN.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item Description -->
+                                                <div class="shop-item-description">
+                                                    <p>
+                                                        <b>Type 93 Pure Oxygen Torpedo</b>
+                                                    </p>
+                                                    <p>(Core Data Shop)</p>
+                                                    
+                                                    <div class="desc-buff"></div>
+                                                    <p>
+                                                        Provides a massive +TRP stat boost in exchange for sacrificing survivability compared to other Auxiliary equipment.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+
                     <br>
+                    <br>
+                        
 
                     <h3 id="medal"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Medal_Shop" title="Medal Shop">Medal Shop</a></h3>
-                        <p>Coming soon.</p>
+                    
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                                
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\medal.png" width="25px" alt="Medal of Honor"></p>
+                                </li>
+                                <li>
+                                    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+                                </li>
+                            </ul>
+                        <br>
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                        <ul>
+                            <li>
+                                <p class="fs-5">
+                                    <i>
+                                        <b><a href="https://azurlane.koumakan.jp/wiki/Requisition" rel="noopener noreferrer" target="_blank">Requisition</a> is NOT worth it!</b>
+                                    </i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i>Some ships in this shop could be necessary for <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" title="Fleet Technology">Fleet Technology</a> purposes, see the <a href="research#tech_points" target="_self" rel="noopener noreferrer">Research Guide</a> for more details.</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i>For information regarding ship viability, see the <a href="fleetbuilding" rel="noopener noreferrer" target="_self">Fleetbuilding Guide</a> or the <a href="https://slaimuda.github.io/ectl/#/home" rel="noopener noreferrer" target="_blank">English Community Tier List</a>.</i>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i>
+                                        <b>Buying duplicate ship copies here for <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Breaks</a> is fine!</b>
+                                    </i>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="overarcing-container shiprowcontainerfont">
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+
+                                <!-- Ship Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Enterprise" title="Enterprise">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\EnterpriseIcon.png" alt="Enterprise">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Enterprise
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Ship Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Hood" title="Hood">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\HoodIcon.png" alt="Hood">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Hood
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Ship Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Sirius" title="Sirius">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\SiriusIcon.png" alt="Sirius">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Sirius
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>If not Max <a href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" rel="noopener noreferrer" target="_blank">Limit Break</a>.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" title="Prototype Bulin MKII">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\gold_bulin.png" alt="Prototype Bulin MKII">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Prototype<br>Bulin MKII
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Ship Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Tirptiz" title="Tirpitz">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\ship_icons\TirpitzIcon.png" alt="Tirpitz">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Tirpitz
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>For <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Fleet_Technology" title="Fleet Technology">Fleet Technology</a> ONLY.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Limit_Break" title="Universal Bulin">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\purple_bulin.png" alt="Universal Bulin">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Universal<br>Bulin
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>Only if needed.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Tactical_Class" title="T3 Skill Book">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\unknown_t3_book.png" alt="T3 Skill Book">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Skill Book
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>Offense > Support > Defense</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Research" title="DR5 Blueprint">
+                                            <div class="icon rarity-5 border-radius-0">
+                                                <img src="images\materials\pr5_bp.png" alt="DR5 Blueprint">
+                                            </div>
+                                            <!-- Item Name -->
+                                            DR5 Blueprint
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Research" title="PR5 Blueprint">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\pr5_bp.png" alt="PR5 Blueprint">
+                                            </div>
+                                            <!-- Item Name -->
+                                            PR5 Blueprint
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Equipment#Upgrade_(Enhance)" title="T3 Plate">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\unknown_t3_plate.png" alt="T3 Plate">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Plates
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>General > Main Gun / Aircraft.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\full_course.png" alt="Full Course">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Full Course
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Royal Gourmet">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\royal_gourmet.png" alt="Royal Gourmet">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Royal Gourmet
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
                     <br>
 
+
                     <h3 id="protocore"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Prototype_Shop" title="Prototype Shop">Prototype Shop</a></h3>
-                        <p>Coming soon.</p>
+
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                                    
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\protocore.png" width="25px" alt="Prototype Core"></p>
+                                </li>
+                                <li>
+                                    <p>Reset: Monthly (1st) at <b>00:00</b> (UTC-7).
+                                </li>
+                            </ul>
+                        <br>
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                            <p>
+                                <i>
+                                    Main Article: <a href="research#protocore_spending">Protocore Spending</a>
+                                </i>
+                            </p>
+
+
+                        <!-- <div>
+                            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEn0TPqia-58lymGqP9V8VDucA9B-EKO3NANtpJxC3aR98Faj_fRuBbKbuXwWN1YmZgesHr2D8m1nw/pubhtml?gid=1111995248&amp;single=true&amp;widget=true&amp;headers=false" class="custom-iframe"></iframe>
+                        </div> -->
                     <br>
+                
+
+                <h2 id="event">Event</h2><hr class="custom-hr">
+
+                    <h3 id="major_event"><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop" title="Major Event Shop">Major Event Shop</a></h3>
+
+                        <!-- Buffer -->
+                        <div class="row mb-2"></div>
+                                        
+                        <!-- Shop Information -->
+                        <h4>Information:</h4>
+                            <ul>
+                                <li>
+                                    <p>Currency: <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency" title="Event Currency"></p>
+                                </li>
+                                <li>
+                                    <p>Shop is removed <b>1 Week after Event ends</b>.
+                                </li>
+                            </ul>
+                        <br>
+
+                        <!-- Shop Priority -->
+                        <h4>Priority:</h4>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <i>Only get ONE (1) copy of the Event Ship. You can use bulins instead of duplicates.</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i>Most Events take <b>~100,000</b> <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop" title="Event Currency"><img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></a> to clear out the entire shop (assuming 1 copy of the Event Ship).</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i>Equipment costs can differ based on the rarity of the gear, and whether the gear is in print or equipment form.</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><i>T4 USS Tech Boxes > All other T4 Tech Boxes</i></p>
+                                </li>
+                            </ul>
+                        <br>
+
+                        <div class="overarcing-container shiprowcontainerfont">
+
+                            <!-- Item Row -->
+                            <div class="shipRowContainer">
+
+                                <!-- Ship Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Building#Time_Limited_Construction" title="Event Ship">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\UnknownShip.png" alt="Event Ship">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Event Ship
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>8000 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"><br>(1 Copy)</p>
+                                    </div>
+                                </div>
+
+                                <!-- Ship Cell -->
+                                <div class="shipRowCell high-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Equipment" title="Event Gear">
+                                            <div class="icon rarity-5 border-radius-0">
+                                                <img src="images\materials\unknown_gear_bp.png" alt="Event Gear">
+                                            </div>
+                                            <!-- Ship name -->
+                                            Equipment
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>10000 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Living_Area#Refilling_Supplies" title="Full Course">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\t4_box.png" alt="Tech Boxes">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Tech Boxes
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>4800 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"><br>USS > Rest<br>New Players Only.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Augmentation" title="Augmentation">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\augment_module_core.png" alt="Augment Module Core">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Augment Module Cores
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>1500 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"><br>Only if needed.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell niche-priority">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Augmentation" title="Augmentation">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\t2_augment_enhance.png" alt="T2 Augment Enhance Stones">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Augment Enhance Stones
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>4500 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"><br>Only if needed.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shipRowContainer">
+
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Chip">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\cognitive_chip.png" alt="Cognitive Chip">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Cognitive Chips
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>3000 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Dockyard#Cognitive_Awakening" title="Cognitive Arrays">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\cognitive_array.png" alt="Cognitive Arrays">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Cognitive Arrays
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>5000 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Research" title="DR6 Blueprint">
+                                            <div class="icon rarity-5 border-radius-0">
+                                                <img src="images\materials\pr6_bp.png" alt="DR6 Blueprint">
+                                            </div>
+                                            <!-- Item Name -->
+                                            DR6 Blueprints
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>10000 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Research" title="PR6 Blueprint">
+                                            <div class="icon rarity-4 border-radius-0">
+                                                <img src="images\materials\pr6_bp.png" alt="PR6 Blueprint">
+                                            </div>
+                                            <!-- Item Name -->
+                                            PR6 Blueprints
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>15000 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shipRowContainer">
+                                
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Equipment#Upgrade_(Enhance)" title="T3 Plate">
+                                            <div class="icon rarity-3 border-radius-0">
+                                                <img src="images\materials\unknown_t3_plate.png" alt="T3 Plate">
+                                            </div>
+                                            <!-- Item Name -->
+                                            T3 Plates
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>4500 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"><br>General > Main Gun / Aircraft.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops" title="Coin">
+                                            <div class="icon rarity-1 border-radius-0">
+                                                <img src="images\materials\coin.png" alt="Coin">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Coins
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>2500 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+
+                                <!-- Item Cell -->
+                                <div class="shipRowCell">
+                                    <div class="icon-note-helper">
+                                        <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Oil_Cost" title="Oil">
+                                            <div class="icon rarity-1 border-radius-0">
+                                                <img src="images\materials\Oil.png" alt="Oil">
+                                            </div>
+                                            <!-- Item Name -->
+                                            Oil
+                                        </a>
+                                    </div>
+                                    <div class="description-note">
+                                        <p>2250 <img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="table-responsive d-none">
+                            <table class="table table-sm table-dark table-bordered text-center border-secondary align-middle">
+                                <col width="25%">
+                                <col width="60%">
+                                <col width="15%">
+                                <thead>
+                                    <tr>
+                                        <th>Priority</th>
+                                        <th>Items</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-content-center">
+
+                                    <!-- high priority -->
+                                    <tr>
+                                        <th>High Priority</th>
+
+                                        <!-- items -->
+                                        <td>
+                                            <div class="shopItemContainer">
+                                                
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\UnknownShip.png" alt="Event Ship">
+                                                </div>
+                                                <div class="shopIcon rarity-5 border-radius-0">
+                                                    <img src="images\materials\unknown_gear_bp.png" alt="Event Gear">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\cognitive_array.png" alt="Cognitive Arrays">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\cognitive_chip.png" alt="Cognitive Chips">
+                                                </div>
+                                                <div class="shopIcon rarity-5 border-radius-0">
+                                                    <img src="images\materials\pr6_bp.png" alt="DR Prints">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\pr6_bp.png" alt="PR Prints">
+                                                </div>
+
+
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <p>
+                                                <b>51,000</b><a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop" title="Event Currency"><img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></a>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <!-- new players ONLY -->
+                                    <tr>
+                                        <th>Good for New Players</th>
+
+                                        <!-- items -->
+                                        <td>
+                                            <div class="shopItemContainer">
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\t4_box.png" alt="USS Tech Boxes">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\t4_box.png" alt="HMS Tech Boxes">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\t4_box.png" alt="IJN Tech Boxes">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\t4_box.png" alt="KMS Tech Boxes">
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <p>
+                                                <b>4,800</b> <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop" title="Event Currency"><img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></a>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <!-- medium priority -->
+                                    <tr>
+                                        <th>Medium Priority</th>
+
+                                        <!-- items -->
+                                        <td>
+                                            <div class="shopItemContainer">
+                                                <div class="shopIcon rarity-1 border-radius-0">
+                                                    <img src="images\materials\oil.png" alt="Oil">
+                                                </div>
+                                                <div class="shopIcon rarity-3 border-radius-0">
+                                                    <img src="images\materials\unknown_t3_plate.png" alt="T3 Plates">
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <p>
+                                                <b>6,750</b> <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop" title="Event Currency"><img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></a>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <!-- low priority -->
+                                    <tr>
+                                        <th>Low Priority</th>
+
+                                        <!-- items -->
+                                        <td>
+                                            <div class="shopItemContainer">
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\augment_module_core.png" alt="Augment Module Core">
+                                                </div>
+                                                <div class="shopIcon rarity-3 border-radius-0">
+                                                    <img src="images\materials\t2_augment_enhance.png" alt="T2 Augment Module Stones">
+                                                </div>
+                                                <div class="shopIcon rarity-3 border-radius-0">
+                                                    <img src="images\materials\t1_augment_conversion.png" alt="T1 Augment Module Conversion Stones">
+                                                </div>
+                                                <div class="shopIcon rarity-4 border-radius-0">
+                                                    <img src="images\materials\t2_augment_conversion.png" alt="T2 Augment Module Conversion Stones">
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <p>
+                                                <b>17,000</b> <a rel="noopener noreferrer" target="_blank" href="https://azurlane.koumakan.jp/wiki/Shops#Event_Shop" title="Event Currency"><img src="images\materials\InvolutedSealPt.png" width="25px" alt="Event Currency"></a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <br>
+                
+
 
         </div>
     </body>
@@ -239,7 +2257,7 @@
     <!-- bottom bar -->
     <footer class="footer">
         <div class="container-fluid pb-1 pt-1 overflow-auto">
-            <div class="row">
+            <div class="d-flex">
                 <div class="col" style="text-align: left;">
                     <h6 class="title footer-style-two">Media taken from <a href="https://azurlane.koumakan.jp/wiki/Azur_Lane_Wiki" target="_blank" rel="noopener noreferrer">Azur Lane English Wiki</a>.</h6>
                 </div>
