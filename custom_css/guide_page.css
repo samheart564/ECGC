@@ -597,7 +597,7 @@ div.modifiedShipRowContainer {
 .custom-sidenav-button {
   transform: rotate(90deg);
   position: fixed;
-  top: 16px;
+  top: 16.5px;
   left: 0px;
   transform-origin: bottom left;
   transition: 0.5s;
