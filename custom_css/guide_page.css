@@ -645,7 +645,7 @@ div.modifiedShipRowContainer {
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 15px;
-  padding-bottom: 75px;
+  padding-bottom: 150px;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
