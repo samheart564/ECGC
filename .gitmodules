@@ -1,3 +1,0 @@
-[submodule "dev_tools/gsheets2img"]
-	path = dev_tools/gsheets2img
-	url = https://github.com/blead/gsheets2img.git
