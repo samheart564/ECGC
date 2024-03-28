@@ -192,6 +192,54 @@ a.in_hover:active {
   text-decoration: underline;
 }
 
+.secondary-button-hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+.secondary-button-hover:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.secondary-button-hover:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.secondary-button-hover:hover {
+  color: cyan;
+  text-decoration: underline;
+}
+
+.secondary-button-hover > * {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+.secondary-button-hover:visited > * {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.secondary-button-hover:active > * {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.secondary-button-hover:hover > * {
+  color: cyan;
+  text-decoration: underline;
+}
+
 /* Item Rarities */
 .rarity-5 {
   background: linear-gradient(120deg,#fbffca,#baffbf,#a7efff,#ffabff);
