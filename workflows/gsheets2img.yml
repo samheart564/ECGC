@@ -1,0 +1,45 @@
+name: gsheets2img
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * MON'
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 21.6.2
+      uses: actions/setup-node@v2
+      with:
+        node-version: '21.6.2'
+
+    - name: Run Script
+      run: |
+        cd dev_tools/gsheets2img
+        rm -rf node_modules
+        npm install
+        npm start
+
+    - name: Check for Changes
+      run: |
+        rm -rf dev_tools/gsheets2img/node_modules
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git rev-parse --show-toplevel
+        git status
+        git add images/
+        git diff-index --quiet HEAD || echo "changes=true" >> $GITHUB_ENV
+        git commit -m "$(TZ='America/Los_Angeles' date +'%Y-%m-%d') Equip & Misc. Update" || echo "No changes to commit"
+
+
+    - name: Push changes
+      if: steps.git-check.outputs.changes == 'true'
+      run: git push origin main
