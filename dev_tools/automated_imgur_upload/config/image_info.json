@@ -176,7 +176,7 @@
   "Historical_Note": {
     "type": "image",
     "title": "Hard Mode Req Help",
-    "description": "Changelog:\n https://samheart564.github.io/ECGC/changelog\n\nYOU CAN CTRL+F TO FIND IMAGES NOW! MAKE SURE ALL ARE LOADED IN FIRST.",
+    "description": "Changelog:\nhttps://samheart564.github.io/ECGC/changelog\n\nYOU CAN CTRL+F TO FIND IMAGES NOW! MAKE SURE ALL ARE LOADED IN FIRST.",
     "path": "images/equip_important/Historical_Note.png"
   },
   "IX_Auxes": {
