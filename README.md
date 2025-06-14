@@ -1,4 +1,4 @@
-# ECGC
+# ECGC (V1 - DEPRECIATED)
 
 Sam's English Community Guide Compendium for Azur Lane
 
